@@ -25,21 +25,30 @@ validation or stop before pushing.
 
 Use WebSearch (and WebFetch for must-check pages) to cover, in this order:
 
-1. **Frontier labs** — check each lab source for announcements and releases.
-2. **Research** — new papers/posts: alignment, interpretability, evals, plus notable
+1. **Blog watch (MANDATORY, exhaustive)** — visit every blog in the "Blog watch"
+   table in SOURCES.md and list EVERY post published since the last brief in the
+   `lab-blogs` section (title + link + source; summary optional). This is a
+   completeness check, not curation — the 5–8 cap does not apply. If a blog
+   blocks fetching, note it via search instead; if nothing is new anywhere,
+   include the section with an empty items array.
+2. **Frontier labs** — check each lab source for announcements and releases.
+3. **Research** — new papers/posts: alignment, interpretability, evals, plus notable
    arXiv entries. Skim the Alignment Forum frontpage.
-3. **AI for engineers** — coding-agent and tooling news, notable engineering posts,
+4. **AI for engineers** — coding-agent and tooling news, notable engineering posts,
    high-traction Hacker News AI threads.
-4. **Minds & machines** — run the targeted searches listed in SOURCES.md
+5. **Minds & machines** — run the targeted searches listed in SOURCES.md
    (sycophancy, cognitive debt, companionship, dark patterns, AI × mental health).
-5. **Voices** — for each tracked person: check their blog; then best-effort search
+6. **Voices** — for each tracked person: check their blog; then best-effort search
    for impactful X posts (e.g. `site:x.com @handle` or news coverage of viral posts).
    Missing tweets is acceptable; inventing them is not.
 
 Rules:
 - Every item MUST have a real, working URL you actually found during research.
   Never fabricate links, titles, or dates. If unsure a story is real, drop it.
-- Deduplicate across sections; pick the best-fit section per story.
+- NO paywalled links (see the paywall policy in SOURCES.md): if a story is only
+  behind a paywall, find free or primary coverage, or drop it.
+- Deduplicate across sections; pick the best-fit section per story (a major
+  lab-blog post can appear both in the wire AND as a curated item).
 
 ## 4. Curate and write
 

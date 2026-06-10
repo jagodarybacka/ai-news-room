@@ -4,6 +4,32 @@ A living list. Edit freely; the daily routine reads this file every run.
 "Must-check" means the routine actively looks at it every day. Everything else
 surfaces through general web search.
 
+## Paywall policy
+
+**Never link paywalled content.** Every link in the brief must be readable
+without a subscription or account. Do not use Fortune, The Information, WSJ,
+NYT, Bloomberg, FT, The Atlantic, or paid-tier newsletter posts as item links.
+If a story only exists behind a paywall, find free coverage or the primary
+source instead — or drop the story.
+
+## Blog watch (`lab-blogs`) — MUST list every new post
+
+This is a completeness check, not curation: **every** post published on these
+blogs since the last brief gets listed in the `lab-blogs` section (title +
+link; summary optional). The reader must never miss a new lab post.
+
+| Blog | Where |
+|------|-------|
+| Anthropic — research | https://www.anthropic.com/research |
+| Anthropic — news | https://www.anthropic.com/news |
+| Anthropic — engineering | https://www.anthropic.com/engineering |
+| Transformer Circuits | https://transformer-circuits.pub/ |
+| OpenAI — news & research | https://openai.com/news/ |
+| Google DeepMind — blog | https://deepmind.google/discover/blog/ |
+| Meta AI — blog | https://ai.meta.com/blog/ |
+| Mistral — news | https://mistral.ai/news/ |
+| xAI — news | https://x.ai/news |
+
 ## Frontier labs (`labs`)
 
 | Source | Where |
@@ -44,7 +70,6 @@ Also watch (search, not crawl): DeepSeek and Qwen releases, notable open-weights
 | Claude Code release notes | https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md |
 | Cursor blog | https://cursor.com/blog |
 | Hacker News (top AI threads) | https://news.ycombinator.com/ |
-| The Pragmatic Engineer | https://newsletter.pragmaticengineer.com/ |
 
 ## Minds & machines (`safety-psych`)
 

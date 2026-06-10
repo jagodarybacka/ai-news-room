@@ -41,6 +41,12 @@
     --color-card: var(--card);
     --color-foreground: var(--foreground);
     --color-background: var(--background);
+    --color-ink-labs: var(--ink-labs);
+    --color-ink-research: var(--ink-research);
+    --color-ink-engineering: var(--ink-engineering);
+    --color-ink-minds: var(--ink-minds);
+    --color-ink-voices: var(--ink-voices);
+    --color-ink-wire: var(--ink-wire);
     --radius-sm: calc(var(--radius) * 0.6);
     --radius-md: calc(var(--radius) * 0.8);
     --radius-lg: var(--radius);
@@ -51,24 +57,34 @@
 }
 
 :root {
-    /* Newsprint palette: warm off-white paper, soft dark-grey ink */
-    --background: oklch(0.965 0.008 95);
-    --foreground: oklch(0.32 0.008 95);
-    --card: oklch(0.965 0.008 95);
-    --card-foreground: oklch(0.32 0.008 95);
-    --popover: oklch(0.965 0.008 95);
-    --popover-foreground: oklch(0.32 0.008 95);
-    --primary: oklch(0.32 0.008 95);
-    --primary-foreground: oklch(0.965 0.008 95);
-    --secondary: oklch(0.93 0.01 95);
-    --secondary-foreground: oklch(0.32 0.008 95);
-    --muted: oklch(0.93 0.01 95);
-    --muted-foreground: oklch(0.52 0.01 95);
-    --accent: oklch(0.93 0.01 95);
-    --accent-foreground: oklch(0.32 0.008 95);
+    /* Aged-paper broadsheet: yellowed newsprint, warm grey ink */
+    --background: oklch(0.955 0.026 97);
+    --foreground: oklch(0.32 0.012 95);
+    --card: oklch(0.955 0.026 97);
+    --card-foreground: oklch(0.32 0.012 95);
+    --popover: oklch(0.955 0.026 97);
+    --popover-foreground: oklch(0.32 0.012 95);
+    --primary: oklch(0.32 0.012 95);
+    --primary-foreground: oklch(0.955 0.026 97);
+    --secondary: oklch(0.92 0.024 97);
+    --secondary-foreground: oklch(0.32 0.012 95);
+    --muted: oklch(0.92 0.024 97);
+    --muted-foreground: oklch(0.52 0.014 95);
+    --accent: oklch(0.92 0.024 97);
+    --accent-foreground: oklch(0.32 0.012 95);
     --destructive: oklch(0.577 0.245 27.325);
-    --border: oklch(0.88 0.012 95);
-    --input: oklch(0.88 0.012 95);
+    --border: oklch(0.87 0.02 97);
+    --input: oklch(0.87 0.02 97);
+
+    /* Section inks: print-style section flags, matched lightness so no
+       section shouts. Press red, editor's blue, manual teal, journal plum,
+       ochre, archival brown (the wire). */
+    --ink-labs: oklch(0.5 0.16 27);
+    --ink-research: oklch(0.48 0.1 252);
+    --ink-engineering: oklch(0.5 0.09 175);
+    --ink-minds: oklch(0.48 0.11 320);
+    --ink-voices: oklch(0.55 0.11 75);
+    --ink-wire: oklch(0.48 0.06 60);
     --ring: oklch(0.708 0 0);
     --chart-1: oklch(0.87 0 0);
     --chart-2: oklch(0.556 0 0);

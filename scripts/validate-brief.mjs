@@ -8,7 +8,7 @@ import path from "node:path"
 const DATA_DIR = path.resolve(import.meta.dirname, "../public/data")
 const BRIEFS_DIR = path.join(DATA_DIR, "briefs")
 
-const SECTION_IDS = ["labs", "research", "engineering", "safety-psych", "voices"]
+const SECTION_IDS = ["labs", "research", "engineering", "safety-psych", "voices", "lab-blogs"]
 const ITEM_TYPES = ["news", "paper", "blog", "tweet", "release"]
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/
 const MAX_SUMMARY_LENGTH = 400
@@ -33,8 +33,11 @@ function validateHeadline(headline, ctx) {
   if (headline.url && !isHttpUrl(headline.url)) fail(`${ctx}: headline.url is not a valid http(s) URL`)
 }
 
-function validateItem(item, ctx) {
-  for (const field of ["title", "summary", "url", "source"]) {
+function validateItem(item, ctx, { summaryOptional = false } = {}) {
+  const required = summaryOptional
+    ? ["title", "url", "source"]
+    : ["title", "summary", "url", "source"]
+  for (const field of required) {
     if (!isNonEmptyString(item[field])) fail(`${ctx}: ${field} missing or empty`)
   }
   if (item.url && !isHttpUrl(item.url)) fail(`${ctx}: url is not a valid http(s) URL`)
@@ -68,8 +71,11 @@ function validateBrief(brief, date, ctx) {
       fail(`${ctx}: section "${section.id}" items must be an array`)
       continue
     }
+    // The lab-blogs wire is a bare listing; summaries are optional there.
     section.items.forEach((item, i) =>
-      validateItem(item, `${ctx} > ${section.id}[${i}]`)
+      validateItem(item, `${ctx} > ${section.id}[${i}]`, {
+        summaryOptional: section.id === "lab-blogs",
+      })
     )
   }
 }

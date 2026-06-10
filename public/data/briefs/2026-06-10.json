@@ -9,6 +9,47 @@
   },
   "sections": [
     {
+      "id": "lab-blogs",
+      "title": "The Lab Wire",
+      "items": [
+        {
+          "title": "Claude Fable 5 and Claude Mythos 5",
+          "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+          "source": "Anthropic",
+          "type": "release",
+          "importance": 3
+        },
+        {
+          "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
+          "url": "https://www.anthropic.com/news/services-track-partner-hub",
+          "source": "Anthropic",
+          "type": "news",
+          "importance": 1
+        },
+        {
+          "title": "What we learned mapping a year's worth of AI-enabled cyber threats",
+          "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+          "source": "Anthropic",
+          "type": "blog",
+          "importance": 2
+        },
+        {
+          "title": "Expanding Project Glasswing",
+          "url": "https://www.anthropic.com/news/expanding-project-glasswing",
+          "source": "Anthropic",
+          "type": "news",
+          "importance": 1
+        },
+        {
+          "title": "Anthropic confidentially submits draft S-1 to the SEC",
+          "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+          "source": "Anthropic",
+          "type": "news",
+          "importance": 2
+        }
+      ]
+    },
+    {
       "id": "labs",
       "title": "Frontier Labs",
       "items": [
@@ -173,10 +214,10 @@
           "importance": 2
         },
         {
-          "title": "Boris Cherny: some days I manage tens of thousands of agents",
-          "summary": "The Claude Code creator told Fortune Brainstorm Tech he hasn't handwritten code in eight months, and that agentic coding drove an 8x increase in code written at Anthropic this year.",
-          "url": "https://fortune.com/2026/06/08/anthropics-boris-cherny-creator-of-claude-code-says-there-are-days-he-manages-tens-of-thousands-of-ai-agents-at-once/",
-          "source": "Fortune",
+          "title": "Boris Cherny × Karpathy on coding's endgame",
+          "summary": "The Claude Code creator says he hasn't handwritten code in months and manages fleets of agents; the two debate whether AI-written code means evolution or a coming \"slopocalypse\".",
+          "url": "https://eu.36kr.com/en/p/3668658715829123",
+          "source": "36Kr",
           "type": "news",
           "importance": 2
         },

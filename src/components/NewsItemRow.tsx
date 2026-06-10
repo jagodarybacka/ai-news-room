@@ -21,9 +21,11 @@ export function NewsItemRow({ item }: { item: BriefItem }) {
         >
           {item.title}
         </h3>
-        <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-          {item.summary}
-        </p>
+        {item.summary && (
+          <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+            {item.summary}
+          </p>
+        )}
         <div className="mt-1.5 flex items-center gap-2 text-xs text-muted-foreground">
           <span className="font-medium uppercase tracking-wide">
             {item.source}

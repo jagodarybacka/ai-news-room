@@ -3,6 +3,9 @@ import { useParams } from "react-router-dom"
 import { Masthead } from "@/components/Masthead"
 import { HeadlineStory } from "@/components/HeadlineStory"
 import { SectionBlock } from "@/components/SectionBlock"
+import { LabBlogsWire } from "@/components/LabBlogsWire"
+import { TopStories } from "@/components/TopStories"
+import { pickTopStories } from "@/lib/topStories"
 import { fetchBrief, fetchIndex, formatTime } from "@/lib/data"
 import type { Brief } from "@/lib/types"
 
@@ -61,11 +64,15 @@ export function BriefPage() {
   }
 
   const { brief } = state
+  const labBlogs = brief.sections.find((s) => s.id === "lab-blogs")
+  const curated = brief.sections.filter((s) => s.id !== "lab-blogs")
   return (
     <>
       <Masthead date={brief.date} />
       {brief.headline && <HeadlineStory headline={brief.headline} />}
-      {brief.sections.map((section) => (
+      <TopStories stories={pickTopStories(brief)} />
+      {labBlogs && <LabBlogsWire section={labBlogs} />}
+      {curated.map((section) => (
         <SectionBlock key={section.id} section={section} />
       ))}
       <footer className="mt-12 border-t border-foreground/20 py-6 text-center text-xs text-muted-foreground">

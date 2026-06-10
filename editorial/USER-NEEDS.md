@@ -29,6 +29,9 @@ That means:
   No "game-changing", no "stunning". If a claim is from a press release, say so.
 - **Primary sources preferred.** Link the lab's own post or the paper, not coverage of
   it — unless the coverage adds real analysis.
+- **Never paywalled.** Every link must be readable without a subscription (see the
+  paywall policy in SOURCES.md). A brief item the reader can't open is worse than
+  no item.
 - **No duplicates across sections.** Each story appears once, in its best-fit section.
 - **Importance is signal.** Reserve importance 3 ("must-read") for things readers
   would regret missing: major model releases, landmark papers, significant safety
@@ -43,6 +46,14 @@ That means:
 | `engineering` | AI for Engineers | AI-assisted development: coding agents, Claude Code/Cursor/IDE tooling, agent workflows, notable engineering write-ups and trends for full-stack devs. |
 | `safety-psych` | Minds & Machines | AI × human psychology — sycophancy, cognitive debt, companionship, manipulation/dark patterns, mental-health effects, eval methodology for these. |
 | `voices` | Voices | Notable posts from tracked people (see SOURCES.md): blog posts reliably, impactful X posts best-effort. Opinion and hot takes welcome here. |
+| `lab-blogs` | The Lab Wire | **Exhaustive, not curated:** every new post on the watched lab blogs (see "Blog watch" in SOURCES.md) since the last brief. Title + link; summary optional. The 5–8 item cap does not apply. |
+
+## Top 3
+
+The three most important items across the curated sections (by `importance`,
+excluding the headline and the lab-blogs wire) are surfaced automatically as a
+"Top 3" index under the headline. Assign `importance` with that in mind — the
+three best non-headline stories of the day should carry the highest values.
 
 ## The headline
 

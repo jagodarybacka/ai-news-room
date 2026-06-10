@@ -4,6 +4,7 @@ export type SectionId =
   | "engineering"
   | "safety-psych"
   | "voices"
+  | "lab-blogs"
 
 export type ItemType = "news" | "paper" | "blog" | "tweet" | "release"
 
@@ -12,7 +13,8 @@ export type Importance = 1 | 2 | 3
 
 export interface BriefItem {
   title: string
-  summary: string
+  /** Optional only in the lab-blogs wire section; required elsewhere. */
+  summary?: string
   url: string
   source: string
   type: ItemType
