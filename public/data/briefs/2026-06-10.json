@@ -77,14 +77,6 @@
           "source": "Releasebot",
           "type": "release",
           "importance": 1
-        },
-        {
-          "title": "NIST's CAISI signs frontier-model testing agreements with Google DeepMind, Microsoft, and xAI",
-          "summary": "The agreements give the US government early access to unreleased models for security evaluation, extending CAISI's existing testing program.",
-          "url": "https://www.hpcwire.com/off-the-wire/nists-caisi-announces-new-frontier-ai-testing-agreements-with-google-deepmind-microsoft-xai/",
-          "source": "HPCwire",
-          "type": "news",
-          "importance": 1
         }
       ]
     },
@@ -98,14 +90,6 @@
           "summary": "Anthropic mapped twelve months of observed AI-enabled attack patterns onto the MITRE ATT&CK framework and reports where models meaningfully change attacker capability.",
           "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
           "source": "Anthropic",
-          "type": "blog",
-          "importance": 2
-        },
-        {
-          "title": "Are we in a coding overhang?",
-          "summary": "LessWrong discussion arguing that model coding capability now exceeds what tooling, orgs, and trust structures can absorb — and what that gap implies for the next year.",
-          "url": "https://www.lesswrong.com/posts/vtgRghz3wvPGjkoCN/are-we-in-a-coding-overhang-1",
-          "source": "LessWrong",
           "type": "blog",
           "importance": 2
         },
@@ -188,14 +172,6 @@
           "importance": 1
         },
         {
-          "title": "High AI trust leaves people vulnerable to \"cognitive surrender\"",
-          "summary": "PsyPost covers a study finding that high baseline trust in AI predicts uncritical acceptance of its outputs, even when errors are detectable.",
-          "url": "https://www.psypost.org/high-trust-in-ai-leaves-individuals-vulnerable-to-cognitive-surrender-study-finds/",
-          "source": "PsyPost",
-          "type": "news",
-          "importance": 1
-        },
-        {
           "title": "The hidden functions of sycophancy: steering, consistency, and cognitive dependency",
           "summary": "AI & Society paper arguing sycophancy is not a bug but serves conversational steering and persona consistency — while quietly building user dependency.",
           "url": "https://link.springer.com/article/10.1007/s00146-026-02993-z",
@@ -225,14 +201,6 @@
           "source": "36Kr",
           "type": "news",
           "importance": 2
-        },
-        {
-          "title": "Simon Willison's \"AI state of the union\" on Lenny's Podcast",
-          "summary": "Willison argues we've passed the inflection point on AI-assisted development and walks through automation timelines and the rise of \"dark factories\".",
-          "url": "https://www.lennysnewsletter.com/p/an-ai-state-of-the-union",
-          "source": "Lenny's Newsletter",
-          "type": "blog",
-          "importance": 1
         }
       ]
     }

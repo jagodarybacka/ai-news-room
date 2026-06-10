@@ -47,6 +47,11 @@ Rules:
   Never fabricate links, titles, or dates. If unsure a story is real, drop it.
 - NO paywalled links (see the paywall policy in SOURCES.md): if a story is only
   behind a paywall, find free or primary coverage, or drop it.
+- Freshness: news, releases, blog posts, tweets, and discussion threads MUST have
+  been published within the last 30 days. Search engines surface old content in
+  fresh results — always check the actual publication date (arXiv IDs encode
+  YYMM; fetch the page if unsure). Papers are exempt when genuinely trending
+  right now. If you cannot verify an item's date, drop the item.
 - Deduplicate across sections; pick the best-fit section per story (a major
   lab-blog post can appear both in the wire AND as a curated item).
 
