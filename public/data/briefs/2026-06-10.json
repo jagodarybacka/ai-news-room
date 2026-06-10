@@ -52,6 +52,7 @@
     {
       "id": "labs",
       "title": "Frontier Labs",
+      "comment": "Anthropic owned the cycle — a new model tier above Opus and IPO paperwork in the same fortnight — while Google and xAI shipped quietly around it.",
       "items": [
         {
           "title": "Anthropic confidentially files draft S-1 for an IPO",
@@ -90,6 +91,7 @@
     {
       "id": "research",
       "title": "Research",
+      "comment": "Quiet on breakthroughs; the interesting work is meta — whether tooling, orgs, and evals can keep up with what models can already do.",
       "items": [
         {
           "title": "What Anthropic learned mapping a year of AI-enabled cyber threats",
@@ -128,6 +130,7 @@
     {
       "id": "engineering",
       "title": "AI for Engineers",
+      "comment": "The agent era is consolidating: open-source agents top the rankings, Microsoft pushes agent security, and practitioners keep asking whether speed survives team process.",
       "items": [
         {
           "title": "OpenCode tops LogRocket's June AI dev-tool rankings",
@@ -158,6 +161,7 @@
     {
       "id": "safety-psych",
       "title": "Minds & Machines",
+      "comment": "An unusually strong day: hard experimental evidence, including in Science, that sycophancy and AI assistance measurably change human behavior and independence.",
       "items": [
         {
           "title": "Science: sycophantic AI decreases prosocial intentions and promotes dependence",
@@ -204,6 +208,7 @@
     {
       "id": "voices",
       "title": "Voices",
+      "comment": "The practitioners agree hand-written code is ending; the argument now is what that does to the people who used to write it.",
       "items": [
         {
           "title": "Karpathy, via Simon Willison: \"software increasingly comes out on a tap\"",

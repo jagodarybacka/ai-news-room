@@ -24,6 +24,8 @@ export interface BriefItem {
 export interface BriefSection {
   id: SectionId
   title: string
+  /** Optional one-sentence editor's note: the section's vibe at a glance. */
+  comment?: string
   items: BriefItem[]
 }
 

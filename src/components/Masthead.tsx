@@ -20,6 +20,14 @@ export function Masthead({ date }: MastheadProps) {
             Today
           </NavLink>
           <NavLink
+            to="/reading-list"
+            className={({ isActive }) =>
+              isActive ? "text-foreground" : "hover:text-foreground"
+            }
+          >
+            Reading List
+          </NavLink>
+          <NavLink
             to="/archive"
             className={({ isActive }) =>
               isActive ? "text-foreground" : "hover:text-foreground"

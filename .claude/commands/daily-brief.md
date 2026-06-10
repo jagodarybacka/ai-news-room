@@ -54,6 +54,11 @@ Rules:
 
 - Apply USER-NEEDS.md ruthlessly: max 5–8 items per section, 1–2 sentence summaries,
   importance mostly 1, importance 3 only for genuine must-reads. At most one headline.
+- **Editor's notes:** for each curated section, optionally write a `comment` — ONE
+  sentence (max 250 chars) capturing the section's vibe or the single thing that
+  matters, so the reader gets the day in a 15-second skim of the notes alone.
+  Skip the comment when the section had an unremarkable day; a skipped note is
+  itself signal. Never restate item titles — synthesize.
 - Write `public/data/briefs/<YYYY-MM-DD>.json` (today's local date) following the
   schema of the existing briefs (see any file in `public/data/briefs/`).
 - Add today's date to `public/data/index.json`: append to `dates`, set `latest`.

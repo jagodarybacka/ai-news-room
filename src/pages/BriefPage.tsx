@@ -71,9 +71,9 @@ export function BriefPage() {
       <Masthead date={brief.date} />
       {brief.headline && <HeadlineStory headline={brief.headline} />}
       <TopStories stories={pickTopStories(brief)} />
-      {labBlogs && <LabBlogsWire section={labBlogs} />}
+      {labBlogs && <LabBlogsWire section={labBlogs} briefDate={brief.date} />}
       {curated.map((section) => (
-        <SectionBlock key={section.id} section={section} />
+        <SectionBlock key={section.id} section={section} briefDate={brief.date} />
       ))}
       <footer className="mt-12 border-t border-foreground/20 py-6 text-center text-xs text-muted-foreground">
         Researched and written by Claude · generated at{" "}

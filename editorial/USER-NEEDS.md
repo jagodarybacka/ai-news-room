@@ -48,6 +48,13 @@ That means:
 | `voices` | Voices | Notable posts from tracked people (see SOURCES.md): blog posts reliably, impactful X posts best-effort. Opinion and hot takes welcome here. |
 | `lab-blogs` | The Lab Wire | **Exhaustive, not curated:** every new post on the watched lab blogs (see "Blog watch" in SOURCES.md) since the last brief. Title + link; summary optional. The 5–8 item cap does not apply. |
 
+## Editor's notes
+
+Each curated section may carry a one-sentence `comment`: the section's vibe or the
+single thing that matters today. The notes alone should let a reader skim the whole
+day in 15 seconds. Skip the note on unremarkable days — a missing note is itself
+signal. Synthesize; never restate item titles.
+
 ## Top 3
 
 The three most important items across the curated sections (by `importance`,

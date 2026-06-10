@@ -67,6 +67,13 @@ function validateBrief(brief, date, ctx) {
     if (seenIds.has(section.id)) fail(`${ctx}: duplicate section "${section.id}"`)
     seenIds.add(section.id)
     if (!isNonEmptyString(section.title)) fail(`${ctx}: section "${section.id}" has no title`)
+    if (section.comment != null) {
+      if (!isNonEmptyString(section.comment)) {
+        fail(`${ctx}: section "${section.id}" comment must be a non-empty string (or omitted)`)
+      } else if (section.comment.length > 250) {
+        fail(`${ctx}: section "${section.id}" comment longer than 250 chars — one sentence only`)
+      }
+    }
     if (!Array.isArray(section.items)) {
       fail(`${ctx}: section "${section.id}" items must be an array`)
       continue
