@@ -65,11 +65,6 @@ Rules:
 - Record the verified date: every item (and the headline) gets a `publishedAt`
   field (YYYY-MM-DD). The validator rejects briefs with missing, future, or
   stale dates — there is no "unknown date" escape hatch; unverifiable means drop.
-- Images, best-effort: when you fetch an article page anyway, look for its
-  `og:image` (or `twitter:image`) meta tag and record the URL as `imageUrl` on
-  the item (and headline). Only use URLs you actually saw in the page markup —
-  never construct or guess one. Skip generic logos/placeholder images and the
-  lab-blogs wire; an item without an image is completely fine.
 - Deduplicate across sections; pick the best-fit section per story (a major
   lab-blog post can appear both in the wire AND as a curated item).
 

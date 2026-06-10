@@ -29,18 +29,6 @@ export function NewsItemRow({
       data-item-url={item.url}
       className={`py-3 transition-opacity ${dimmed} ${selected ? "-ml-3 border-l-2 border-foreground pl-3" : ""}`}
     >
-      {item.imageUrl && (
-        <img
-          src={item.imageUrl}
-          alt=""
-          loading="lazy"
-          referrerPolicy="no-referrer"
-          onError={(e) => {
-            e.currentTarget.hidden = true
-          }}
-          className="float-right ml-3 mt-1 h-14 w-20 border border-border object-cover grayscale"
-        />
-      )}
       <h3
         className={`font-serif font-semibold leading-snug ${titleSize[item.importance] ?? "text-base"} ${status === "dismissed" ? "line-through decoration-1" : ""}`}
       >

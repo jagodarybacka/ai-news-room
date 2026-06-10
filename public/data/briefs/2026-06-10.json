@@ -6,8 +6,7 @@
     "summary": "The first models in the new Mythos class target the hardest knowledge work and coding problems; Fable 5 ships with safety classifiers that redirect risky queries to Opus 4.8, while the unrestricted Mythos 5 goes to vetted security researchers. Both are priced at $10/$50 per million tokens.",
     "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
     "source": "Anthropic",
-    "publishedAt": "2026-06-09",
-    "imageUrl": "https://www-cdn.anthropic.com/images/4zrzovbb/website/b7055119423427c40a0e4d84054aed17682b50a2-2880x1620.png"
+    "publishedAt": "2026-06-09"
   },
   "sections": [
     {
@@ -119,8 +118,7 @@
           "source": "Anthropic",
           "type": "blog",
           "importance": 2,
-          "publishedAt": "2026-06-08",
-          "imageUrl": "https://www-cdn.anthropic.com/images/4zrzovbb/website/8925ac952fa2cb8eb5e845b2e44f3e71b33fd695-1000x1000.svg"
+          "publishedAt": "2026-06-08"
         },
         {
           "title": "Do coding agents deceive us? Detecting and preventing cheating via capability probes",

@@ -23,8 +23,6 @@ That means:
 
 - **Titles, one-to-two-sentence summaries, and links. Nothing more.** The page is a
   map, not the territory — readers click through only when something matters to them.
-  (A small thumbnail from the article's own `og:image` may accompany an item when
-  the source provides one — decoration, never information.)
 - **Curated, not exhaustive.** 5–8 items per section maximum. If a section had a slow
   day, fewer items (or none) is correct. An empty section is better than filler.
 - **No hype.** Summaries state what happened and why it matters, in plain language.
