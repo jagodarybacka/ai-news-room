@@ -52,6 +52,9 @@ Rules:
   fresh results — always check the actual publication date (arXiv IDs encode
   YYMM; fetch the page if unsure). Papers are exempt when genuinely trending
   right now. If you cannot verify an item's date, drop the item.
+- Record the verified date: every item (and the headline) gets a `publishedAt`
+  field (YYYY-MM-DD). The validator rejects briefs with missing, future, or
+  stale dates — there is no "unknown date" escape hatch; unverifiable means drop.
 - Deduplicate across sections; pick the best-fit section per story (a major
   lab-blog post can appear both in the wire AND as a curated item).
 

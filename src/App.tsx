@@ -2,6 +2,7 @@ import { HashRouter, Route, Routes } from "react-router-dom"
 import { BriefPage } from "@/pages/BriefPage"
 import { ArchivePage } from "@/pages/ArchivePage"
 import { ReadingListPage } from "@/pages/ReadingListPage"
+import { WeeklyPage } from "@/pages/WeeklyPage"
 
 // HashRouter so deep links (archive, past briefs) work on GitHub Pages
 // without a 404.html rewrite hack.
@@ -12,6 +13,8 @@ function App() {
         <Routes>
           <Route path="/" element={<BriefPage />} />
           <Route path="/brief/:date" element={<BriefPage />} />
+          <Route path="/weekly" element={<WeeklyPage />} />
+          <Route path="/weekly/:date" element={<WeeklyPage />} />
           <Route path="/archive" element={<ArchivePage />} />
           <Route path="/reading-list" element={<ReadingListPage />} />
         </Routes>

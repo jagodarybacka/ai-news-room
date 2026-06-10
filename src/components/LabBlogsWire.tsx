@@ -1,5 +1,6 @@
 import { ItemActions } from "@/components/ItemActions"
 import { sectionInk } from "@/lib/sections"
+import { useSelectedUrl } from "@/lib/keyboardNav"
 import { useItemStates } from "@/lib/readState"
 import type { BriefSection } from "@/lib/types"
 
@@ -15,6 +16,7 @@ export function LabBlogsWire({
 }) {
   const ink = sectionInk["lab-blogs"]
   const states = useItemStates()
+  const selectedUrl = useSelectedUrl()
 
   return (
     <section className="mt-8">
@@ -47,7 +49,8 @@ export function LabBlogsWire({
             return (
               <li
                 key={item.url}
-                className={`flex items-baseline gap-2 border-b border-border py-2 leading-snug transition-opacity ${dimmed}`}
+                data-item-url={item.url}
+                className={`flex items-baseline gap-2 border-b border-border py-2 leading-snug transition-opacity ${dimmed} ${selectedUrl === item.url ? "-ml-3 border-l-2 border-l-foreground pl-3" : ""}`}
               >
                 <a
                   href={item.url}

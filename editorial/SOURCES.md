@@ -4,6 +4,9 @@ A living list. Edit freely; the daily routine reads this file every run.
 "Must-check" means the routine actively looks at it every day. Everything else
 surfaces through general web search.
 
+Maintenance: run `pnpm yield` now and then — it tallies which sources actually
+produce brief items and flags ones not seen in 30+ days as pruning candidates.
+
 ## Paywall policy
 
 **Never link paywalled content.** Every link in the brief must be readable

@@ -1,4 +1,4 @@
-import type { Brief, BriefIndex } from "./types"
+import type { Brief, BriefIndex, Weekly } from "./types"
 
 const dataUrl = (path: string) => `${import.meta.env.BASE_URL}data/${path}`
 
@@ -21,11 +21,25 @@ export function fetchBrief(date: string): Promise<Brief> {
   return fetchJson<Brief>(dataUrl(`briefs/${date}.json`))
 }
 
+export function fetchWeekly(date: string): Promise<Weekly> {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) {
+    return Promise.reject(new Error(`Invalid date: ${date}`))
+  }
+  return fetchJson<Weekly>(dataUrl(`weekly/${date}.json`))
+}
+
 export function formatLongDate(isoDate: string): string {
   return new Date(`${isoDate}T00:00:00`).toLocaleDateString("en-US", {
     weekday: "long",
     year: "numeric",
     month: "long",
+    day: "numeric",
+  })
+}
+
+export function formatShortDate(isoDate: string): string {
+  return new Date(`${isoDate}T00:00:00`).toLocaleDateString("en-US", {
+    month: "short",
     day: "numeric",
   })
 }

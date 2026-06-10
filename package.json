@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && node scripts/generate-feed.mjs",
     "lint": "eslint .",
     "typecheck": "tsc -b --noEmit",
     "validate": "node scripts/validate-brief.mjs",
+    "yield": "node scripts/source-yield.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

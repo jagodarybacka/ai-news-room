@@ -24,7 +24,12 @@ yesterday. Titles, short summaries, links — nothing more.
       → pnpm validate                  # schema check
       → git commit + push
       → GitHub Actions builds & deploys to Pages
+
+Fri   claude "/weekly-digest"          # synthesizes the week's briefs into
+      → public/data/weekly/YYYY-MM-DD.json   "The Week in AI" (no new research)
 ```
+
+Subscribe via the Atom feed at `/ai-news-room/feed.xml` (generated at build time).
 
 Editorial control lives in two markdown files:
 

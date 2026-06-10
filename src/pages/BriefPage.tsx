@@ -7,6 +7,8 @@ import { LabBlogsWire } from "@/components/LabBlogsWire"
 import { TopStories } from "@/components/TopStories"
 import { pickTopStories } from "@/lib/topStories"
 import { fetchBrief, fetchIndex, formatTime } from "@/lib/data"
+import { KeyboardNavProvider } from "@/lib/keyboardNav"
+import type { ItemMeta } from "@/lib/readState"
 import type { Brief } from "@/lib/types"
 
 type State =
@@ -66,8 +68,17 @@ export function BriefPage() {
   const { brief } = state
   const labBlogs = brief.sections.find((s) => s.id === "lab-blogs")
   const curated = brief.sections.filter((s) => s.id !== "lab-blogs")
+  // Flat item list in reading order (wire first, then curated sections) for j/k navigation.
+  const navItems: ItemMeta[] = [...(labBlogs ? [labBlogs] : []), ...curated]
+    .flatMap((section) => section.items)
+    .map((item) => ({
+      url: item.url,
+      title: item.title,
+      source: item.source,
+      briefDate: brief.date,
+    }))
   return (
-    <>
+    <KeyboardNavProvider items={navItems}>
       <Masthead date={brief.date} />
       {brief.headline && <HeadlineStory headline={brief.headline} />}
       <TopStories stories={pickTopStories(brief)} />
@@ -76,9 +87,20 @@ export function BriefPage() {
         <SectionBlock key={section.id} section={section} briefDate={brief.date} />
       ))}
       <footer className="mt-12 border-t border-foreground/20 py-6 text-center text-xs text-muted-foreground">
-        Researched and written by Claude · generated at{" "}
-        {formatTime(brief.generatedAt)}
+        <p className="hidden sm:block">
+          j/k navigate · o open · r read · x dismiss · s save
+        </p>
+        <p className="mt-1">
+          Researched and written by Claude · generated at{" "}
+          {formatTime(brief.generatedAt)} ·{" "}
+          <a
+            href={`${import.meta.env.BASE_URL}feed.xml`}
+            className="hover:text-foreground hover:underline"
+          >
+            Feed
+          </a>
+        </p>
       </footer>
-    </>
+    </KeyboardNavProvider>
   )
 }

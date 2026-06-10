@@ -36,7 +36,8 @@ That means:
   discussion threads must be from the last month — ideally from the research
   window. Papers are the one exception: an older paper may appear when it is
   genuinely trending or newly relevant right now. Anything else that's stale gets
-  dropped, not grandfathered.
+  dropped, not grandfathered. Every item carries its verified publication date
+  (`publishedAt`); the validator enforces freshness mechanically.
 - **No duplicates across sections.** Each story appears once, in its best-fit section.
 - **Importance is signal.** Reserve importance 3 ("must-read") for things readers
   would regret missing: major model releases, landmark papers, significant safety

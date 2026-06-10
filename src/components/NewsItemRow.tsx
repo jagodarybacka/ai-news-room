@@ -1,5 +1,7 @@
 import { Badge } from "@/components/ui/badge"
 import { ItemActions } from "@/components/ItemActions"
+import { formatShortDate } from "@/lib/data"
+import { useSelectedUrl } from "@/lib/keyboardNav"
 import { useItemStates } from "@/lib/readState"
 import type { BriefItem } from "@/lib/types"
 
@@ -20,9 +22,13 @@ export function NewsItemRow({
   const status = states[item.url]?.status
   const dimmed =
     status === "read" ? "opacity-55" : status === "dismissed" ? "opacity-30" : ""
+  const selected = useSelectedUrl() === item.url
 
   return (
-    <article className={`py-3 transition-opacity ${dimmed}`}>
+    <article
+      data-item-url={item.url}
+      className={`py-3 transition-opacity ${dimmed} ${selected ? "-ml-3 border-l-2 border-foreground pl-3" : ""}`}
+    >
       <h3
         className={`font-serif font-semibold leading-snug ${titleSize[item.importance] ?? "text-base"} ${status === "dismissed" ? "line-through decoration-1" : ""}`}
       >
@@ -47,6 +53,7 @@ export function NewsItemRow({
         <Badge variant="outline" className="rounded-none px-1.5 py-0 text-[10px] uppercase">
           {item.type}
         </Badge>
+        {item.publishedAt && <span>{formatShortDate(item.publishedAt)}</span>}
         <span className="ml-auto">
           <ItemActions
             meta={{
