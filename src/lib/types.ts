@@ -21,6 +21,8 @@ export interface BriefItem {
   importance: Importance
   /** Verified publication date (YYYY-MM-DD). Required in briefs from 2026-06-11 on. */
   publishedAt?: string
+  /** og:image (or similar) found on the linked page. Never guessed; omitted when absent. */
+  imageUrl?: string
 }
 
 export interface BriefSection {
@@ -38,6 +40,8 @@ export interface Headline {
   source: string
   /** Verified publication date (YYYY-MM-DD). Required in briefs from 2026-06-11 on. */
   publishedAt?: string
+  /** og:image (or similar) found on the linked page. Never guessed; omitted when absent. */
+  imageUrl?: string
 }
 
 export interface Brief {

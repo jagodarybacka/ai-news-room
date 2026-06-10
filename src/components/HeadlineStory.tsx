@@ -13,6 +13,18 @@ export function HeadlineStory({ headline }: { headline: Headline }) {
         <p className="mx-auto mt-4 max-w-2xl font-serif text-lg italic leading-relaxed text-muted-foreground">
           {headline.summary}
         </p>
+        {headline.imageUrl && (
+          <img
+            src={headline.imageUrl}
+            alt=""
+            loading="lazy"
+            referrerPolicy="no-referrer"
+            onError={(e) => {
+              e.currentTarget.hidden = true
+            }}
+            className="mx-auto mt-6 max-h-64 border border-border object-cover grayscale"
+          />
+        )}
       </a>
     </section>
   )

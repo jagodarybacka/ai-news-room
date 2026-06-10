@@ -89,15 +89,35 @@ cognitive debt / deskilling**, **AI companionship**, **dark patterns in LLMs**,
 ## Voices (`voices`)
 
 Blogs are reliable sources; X posts are best-effort via web search (no API).
+Bluesky is reliable: fetch
+`https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=<handle>`
+(public, no auth). Only the handles listed below are identity-verified — do not
+guess handles for the others (lookalike accounts exist).
 
-| Person | Blog / site | X |
-|--------|-------------|---|
-| Boris Cherny | — | @bcherny |
-| Andrej Karpathy | https://karpathy.ai/ | @karpathy |
-| Simon Willison | https://simonwillison.net/ | @simonw |
-| swyx | https://www.swyx.io/ | @swyx |
-| Amanda Askell | https://askell.io/ | @AmandaAskell |
-| Chris Olah | https://colah.github.io/ | @ch402 |
-| Neel Nanda | https://www.neelnanda.io/ | @NeelNanda5 |
-| Jan Leike | https://aligned.substack.com/ | @janleike |
-| Ethan Mollick | https://www.oneusefulthing.org/ | @emollick |
+| Person | Blog / site | X | Bluesky (verified) |
+|--------|-------------|---|--------------------|
+| Boris Cherny | — | @bcherny | — |
+| Andrej Karpathy | https://karpathy.ai/ | @karpathy | karpathy.bsky.social (rarely posts) |
+| Simon Willison | https://simonwillison.net/ | @simonw | simonwillison.net (very active) |
+| swyx | https://www.swyx.io/ | @swyx | swyx.io (active) |
+| Amanda Askell | https://askell.io/ | @AmandaAskell | — |
+| Chris Olah | https://colah.github.io/ | @ch402 | colah.bsky.social (occasional) |
+| Neel Nanda | https://www.neelnanda.io/ | @NeelNanda5 | neelnanda.bsky.social (occasional) |
+| Jan Leike | https://aligned.substack.com/ | @janleike | — |
+| Ethan Mollick | https://www.oneusefulthing.org/ | @emollick | emollick.bsky.social (very active) |
+
+## Community pulse
+
+The mood of the field, not just its announcements. These feed items into
+whichever section fits (often `engineering` or `voices`) and inform editor's
+notes. All endpoints below were verified fetchable without auth.
+
+| Source | How to check |
+|--------|--------------|
+| Hacker News front page | `https://hn.algolia.com/api/v1/search?tags=front_page` (filter AI stories) |
+| Hacker News high-traction | `https://hn.algolia.com/api/v1/search_by_date?query=<topic>&numericFilters=points%3E100` — try claude, openai, gemini, llm |
+| Lobsters AI tag | `https://lobste.rs/t/ai.json` (low volume, high signal) |
+| Hugging Face daily papers | `https://huggingface.co/api/daily_papers` — community upvotes = which papers are actually trending (feeds `research`) |
+| Bluesky | author feeds for the voices table above (see Voices) |
+| Reddit | direct fetch is blocked (403) — use web search instead: `site:reddit.com` + topic, focusing r/LocalLLaMA (open-weights mood), r/MachineLearning (research), r/ClaudeAI and r/OpenAI (product sentiment) |
+| X | no free API; viral posts surface via web search and news coverage only — never fabricate engagement numbers |

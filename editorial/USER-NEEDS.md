@@ -23,6 +23,8 @@ That means:
 
 - **Titles, one-to-two-sentence summaries, and links. Nothing more.** The page is a
   map, not the territory — readers click through only when something matters to them.
+  (A small thumbnail from the article's own `og:image` may accompany an item when
+  the source provides one — decoration, never information.)
 - **Curated, not exhaustive.** 5–8 items per section maximum. If a section had a slow
   day, fewer items (or none) is correct. An empty section is better than filler.
 - **No hype.** Summaries state what happened and why it matters, in plain language.
@@ -51,7 +53,7 @@ That means:
 | `research` | Research | New papers and research posts: alignment, interpretability, evals, capabilities. Both lab research and academia/arXiv. |
 | `engineering` | AI for Engineers | AI-assisted development: coding agents, Claude Code/Cursor/IDE tooling, agent workflows, notable engineering write-ups and trends for full-stack devs. |
 | `safety-psych` | Minds & Machines | AI × human psychology — sycophancy, cognitive debt, companionship, manipulation/dark patterns, mental-health effects, eval methodology for these. |
-| `voices` | Voices | Notable posts from tracked people (see SOURCES.md): blog posts reliably, impactful X posts best-effort. Opinion and hot takes welcome here. |
+| `voices` | Voices | Notable posts from tracked people (see SOURCES.md): blogs and Bluesky reliably, impactful X posts best-effort. Also the community's mood when it's the story — a debate consuming HN or r/LocalLLaMA. Opinion and hot takes welcome here. |
 | `lab-blogs` | The Lab Wire | **Exhaustive, not curated:** every new post on the watched lab blogs (see "Blog watch" in SOURCES.md) since the last brief. Title + link; summary optional. The 5–8 item cap does not apply. |
 
 ## Editor's notes

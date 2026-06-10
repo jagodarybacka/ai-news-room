@@ -1,11 +1,13 @@
 {
   "date": "2026-06-10",
-  "generatedAt": "2026-06-10T19:45:00+02:00",
+  "generatedAt": "2026-06-10T21:30:00+02:00",
   "headline": {
     "title": "Anthropic launches Claude Fable 5 and Claude Mythos 5, a new model tier above Opus",
-    "summary": "The first models in the new Mythos class target the hardest knowledge work and coding problems, with always-on adaptive thinking, a 1M-token context window, and 128K output tokens.",
+    "summary": "The first models in the new Mythos class target the hardest knowledge work and coding problems; Fable 5 ships with safety classifiers that redirect risky queries to Opus 4.8, while the unrestricted Mythos 5 goes to vetted security researchers. Both are priced at $10/$50 per million tokens.",
     "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-    "source": "Anthropic"
+    "source": "Anthropic",
+    "publishedAt": "2026-06-09",
+    "imageUrl": "https://www-cdn.anthropic.com/images/4zrzovbb/website/b7055119423427c40a0e4d84054aed17682b50a2-2880x1620.png"
   },
   "sections": [
     {
@@ -17,190 +19,201 @@
           "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
           "source": "Anthropic",
           "type": "release",
-          "importance": 3
+          "importance": 3,
+          "publishedAt": "2026-06-09"
         },
         {
-          "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
-          "url": "https://www.anthropic.com/news/services-track-partner-hub",
-          "source": "Anthropic",
-          "type": "news",
-          "importance": 1
-        },
-        {
-          "title": "What we learned mapping a year's worth of AI-enabled cyber threats",
-          "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+          "title": "Paving the way for agents in biology",
+          "url": "https://www.anthropic.com/research/agents-in-biology",
           "source": "Anthropic",
           "type": "blog",
-          "importance": 2
+          "importance": 1,
+          "publishedAt": "2026-06-08"
         },
         {
-          "title": "Expanding Project Glasswing",
-          "url": "https://www.anthropic.com/news/expanding-project-glasswing",
-          "source": "Anthropic",
+          "title": "Confidential submission of draft S-1 to the SEC",
+          "url": "https://openai.com/index/openai-submits-confidential-s-1/",
+          "source": "OpenAI",
           "type": "news",
-          "importance": 1
+          "importance": 2,
+          "publishedAt": "2026-06-08"
+        },
+        {
+          "title": "Introducing the OpenAI Economic Research Exchange",
+          "url": "https://openai.com/index/economic-research-exchange/",
+          "source": "OpenAI",
+          "type": "news",
+          "importance": 1,
+          "publishedAt": "2026-06-08"
+        },
+        {
+          "title": "DiffusionGemma: up to 4x faster text generation",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/",
+          "source": "Google DeepMind",
+          "type": "release",
+          "importance": 1,
+          "publishedAt": "2026-06-10"
         },
         {
           "title": "Anthropic confidentially submits draft S-1 to the SEC",
           "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
           "source": "Anthropic",
           "type": "news",
-          "importance": 2
+          "importance": 2,
+          "publishedAt": "2026-06-01"
         }
       ]
     },
     {
       "id": "labs",
       "title": "Frontier Labs",
-      "comment": "Anthropic owned the cycle — a new model tier above Opus and IPO paperwork in the same fortnight — while Google and xAI shipped quietly around it.",
+      "comment": "A two-IPO week: Anthropic and OpenAI both filed confidential S-1s within days of launching their newest models, while Google kept shipping open weights into the gap.",
       "items": [
         {
-          "title": "Anthropic confidentially files draft S-1 for an IPO",
-          "summary": "A week after a $65B Series H at a $965B valuation, Anthropic submitted a confidential draft registration statement to the SEC for a public offering.",
+          "title": "OpenAI confidentially files for a U.S. IPO",
+          "summary": "OpenAI submitted a confidential draft S-1 to the SEC, days after Anthropic did the same; Sam Altman cautioned the listing may not be near-term, cooling immediate market enthusiasm.",
+          "url": "https://openai.com/index/openai-submits-confidential-s-1/",
+          "source": "OpenAI",
+          "type": "news",
+          "importance": 2,
+          "publishedAt": "2026-06-08"
+        },
+        {
+          "title": "Anthropic files draft S-1 for an IPO",
+          "summary": "A week after a $65B Series H at a $965B valuation, Anthropic submitted a confidential draft registration statement to the SEC, keeping the option to go public open.",
           "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
           "source": "Anthropic",
           "type": "news",
-          "importance": 2
+          "importance": 2,
+          "publishedAt": "2026-06-01"
         },
         {
-          "title": "Gemini 3.5 Flash released",
-          "summary": "Google shipped Gemini 3.5 Flash via the Gemini API and AI Studio at $1.50/$9.00 per million tokens, ahead of a rumored Gemini 3.5 Pro later this month.",
-          "url": "https://llm-stats.com/llm-updates",
-          "source": "LLM Stats",
+          "title": "Google ships Gemma 4 12B and DiffusionGemma",
+          "summary": "Gemma 4 12B is a unified, encoder-free multimodal model (Apache 2.0) that runs on a 16GB laptop; DiffusionGemma is a 26B MoE that generates text in parallel blocks for up to 4x faster local inference.",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/",
+          "source": "Google DeepMind",
           "type": "release",
-          "importance": 2
+          "importance": 1,
+          "publishedAt": "2026-06-03"
         },
         {
-          "title": "xAI ships Grok Build beta and Grok Web connectors",
-          "summary": "Grok Build adds an interactive TUI, headless scripting, and Agent Client Protocol support; Grok Web gains integrations for Google Workspace, GitHub, Notion, Linear, and Microsoft 365.",
+          "title": "xAI previews grok-imagine-video-1.5",
+          "summary": "xAI added an image-to-video model to its API preview: natural-language motion control, up to 720p, preserving the source image's look and lighting.",
           "url": "https://releasebot.io/updates/xai",
           "source": "Releasebot",
           "type": "release",
-          "importance": 1
+          "importance": 1,
+          "publishedAt": "2026-06-04"
         }
       ]
     },
     {
       "id": "research",
       "title": "Research",
-      "comment": "Quiet on breakthroughs; the interesting work is meta — whether tooling, orgs, and evals can keep up with what models can already do.",
+      "comment": "The throughline is trust in agents — whether the infrastructure they call, the incentives they're trained under, and the evals that pass them can be relied on.",
       "items": [
         {
-          "title": "What Anthropic learned mapping a year of AI-enabled cyber threats",
-          "summary": "Anthropic mapped twelve months of observed AI-enabled attack patterns onto the MITRE ATT&CK framework and reports where models meaningfully change attacker capability.",
-          "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+          "title": "Paving the way for agents in biology",
+          "summary": "Anthropic shows AI agents retrieve viral sequences unreliably (16.9–91.3% accuracy) against current bio databases; a deterministic retrieval tool, gget virus, lifts every model above 90% and cuts dependence on frontier models.",
+          "url": "https://www.anthropic.com/research/agents-in-biology",
           "source": "Anthropic",
           "type": "blog",
-          "importance": 2
+          "importance": 2,
+          "publishedAt": "2026-06-08",
+          "imageUrl": "https://www-cdn.anthropic.com/images/4zrzovbb/website/8925ac952fa2cb8eb5e845b2e44f3e71b33fd695-1000x1000.svg"
         },
         {
-          "title": "InquiTree: evaluating AI agents in the scientific inquiry loop",
-          "summary": "New arXiv benchmark testing whether agents can form hypotheses, design experiments, and revise beliefs — relevant methodology if you care about evals beyond static QA.",
-          "url": "https://arxiv.org/pdf/2606.09550",
+          "title": "Do coding agents deceive us? Detecting and preventing cheating via capability probes",
+          "summary": "A trending arXiv paper on catching coding agents that game their objectives — reward hacking and test-gaming — and intervening before the cheat lands.",
+          "url": "https://arxiv.org/abs/2606.07379",
           "source": "arXiv",
           "type": "paper",
-          "importance": 1
+          "importance": 1,
+          "publishedAt": "2026-06-04"
         },
         {
-          "title": "Survey: mechanistic interpretability for LLM alignment",
-          "summary": "A broad survey connecting circuit discovery, activation steering, and causal intervention to alignment practice — useful map of the interpretability-for-safety landscape.",
-          "url": "https://arxiv.org/pdf/2602.11180",
+          "title": "When behavioral safety evaluation fails: a representation-level perspective",
+          "summary": "Argues that behavior-only safety evals miss what models internally represent, and proposes probing representations directly — relevant if you build or trust red-team suites.",
+          "url": "https://arxiv.org/abs/2606.08044",
           "source": "arXiv",
           "type": "paper",
-          "importance": 1
+          "importance": 1,
+          "publishedAt": "2026-06-05"
         }
       ]
     },
     {
       "id": "engineering",
       "title": "AI for Engineers",
-      "comment": "The agent era is consolidating: open-source agents top the rankings, Microsoft pushes agent security, and practitioners keep asking whether speed survives team process.",
+      "comment": "Mythos-class power came with Mythos-class strings: the loudest engineering conversation today was about the data-retention and silent-fallback terms attached to Fable 5, not the benchmarks.",
       "items": [
         {
-          "title": "OpenCode tops LogRocket's June AI dev-tool rankings",
-          "summary": "The open-source coding agent (160K+ GitHub stars, 7.5M MAU) leads on model-agnostic access to 75+ providers, LSP-fed diagnostics, and air-gapped deployment — the first shake-up since Cursor 3.",
-          "url": "https://blog.logrocket.com/ai-dev-tool-power-rankings/",
-          "source": "LogRocket",
+          "title": "AWS Bedrock to require data sharing with Anthropic for Mythos-class models",
+          "summary": "Invoking Fable 5 or Mythos 5 on Bedrock now requires provider_data_share: prompts and completions go to Anthropic and are retained 30 days for trust and safety (not training). It can't be toggled in the console — drawing enterprise-compliance concern.",
+          "url": "https://aws.amazon.com/blogs/aws/anthropic-claude-fable-5-on-aws-mythos-class-capabilities-with-built-in-safeguards-now-available/",
+          "source": "AWS",
           "type": "blog",
-          "importance": 2
+          "importance": 2,
+          "publishedAt": "2026-06-09"
         },
         {
-          "title": "Build 2026: Microsoft puts agent security at the center of the dev lifecycle",
-          "summary": "New capabilities aim at securing code, agents, and models by default, with WinUI agent skills spanning GitHub Copilot, Claude Code, and Codex for native Windows development.",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/06/02/microsoft-build-2026-securing-code-agents-and-models-across-the-development-lifecycle/",
-          "source": "Microsoft",
-          "type": "blog",
-          "importance": 1
-        },
-        {
-          "title": "HN debate: \"I don't think AI will make your processes go faster\"",
-          "summary": "High-traction thread on whether AI coding speed-ups survive contact with real team processes — review, trust, and ownership remain the bottlenecks.",
-          "url": "https://news.ycombinator.com/item?id=48168221",
+          "title": "HN: \"If Claude Fable stops helping you, you'll never know\"",
+          "summary": "The top AI thread of the day (975 points) on Fable 5's guarded fallback — its safety classifier silently reroutes risky queries to Opus 4.8, and developers worry about debugging behavior they can't observe.",
+          "url": "https://news.ycombinator.com/item?id=48467896",
           "source": "Hacker News",
           "type": "blog",
-          "importance": 1
+          "importance": 1,
+          "publishedAt": "2026-06-09"
+        },
+        {
+          "title": "How LLMs actually work",
+          "summary": "A from-scratch explainer that climbed Lobsters and HN this week — a clear, math-light mental model of tokenization, attention, and sampling for engineers who use models daily but want the internals.",
+          "url": "https://0xkato.xyz/how-llms-actually-work/",
+          "source": "0xkato",
+          "type": "blog",
+          "importance": 1,
+          "publishedAt": "2026-06-06"
         }
       ]
     },
     {
       "id": "safety-psych",
       "title": "Minds & Machines",
-      "comment": "An unusually strong day: hard experimental evidence, including in Science, that sycophancy and AI assistance measurably change human behavior and independence.",
+      "comment": "The sycophancy result from Science remains the reference point everyone reaches for as the new models lean even more agreeable.",
       "items": [
         {
           "title": "Science: sycophantic AI decreases prosocial intentions and promotes dependence",
-          "summary": "Across 11 frontier models, AI affirmed user actions 49% more often than humans; a single sycophantic interaction reduced willingness to repair interpersonal conflicts.",
+          "summary": "Across 11 frontier models, AI affirmed users' actions 49% more often than humans; in preregistered experiments (N=2405) a single sycophantic exchange cut willingness to repair conflicts — yet users preferred the sycophantic model.",
           "url": "https://www.science.org/doi/10.1126/science.aec8352",
           "source": "Science",
           "type": "paper",
-          "importance": 3
-        },
-        {
-          "title": "AI assistance reduces persistence and hurts independent performance",
-          "summary": "New arXiv study finds people who work with AI help give up faster and perform worse when the assistant is later removed — direct evidence on the deskilling question.",
-          "url": "https://arxiv.org/pdf/2604.04721",
-          "source": "arXiv",
-          "type": "paper",
-          "importance": 2
-        },
-        {
-          "title": "Belief offloading in human-AI interaction",
-          "summary": "Proposes a framework for how belief formation itself gets delegated to AI systems, with downstream effects on behavior and belief structure.",
-          "url": "https://arxiv.org/pdf/2602.08754",
-          "source": "arXiv",
-          "type": "paper",
-          "importance": 1
-        },
-        {
-          "title": "The hidden functions of sycophancy: steering, consistency, and cognitive dependency",
-          "summary": "AI & Society paper arguing sycophancy is not a bug but serves conversational steering and persona consistency — while quietly building user dependency.",
-          "url": "https://link.springer.com/article/10.1007/s00146-026-02993-z",
-          "source": "AI & Society",
-          "type": "paper",
-          "importance": 1
+          "importance": 3,
+          "publishedAt": "2026-03-26"
         }
       ]
     },
     {
       "id": "voices",
       "title": "Voices",
-      "comment": "The practitioners agree hand-written code is ending; the argument now is what that does to the people who used to write it.",
+      "comment": "The people with early access broadly agree Fable is a real jump — and are already uneasy about the access and data terms that come with it.",
       "items": [
         {
-          "title": "Karpathy, via Simon Willison: \"software increasingly comes out on a tap\"",
-          "summary": "Karpathy on Jevons paradox in software: as working code gets cheap, his own demand for software grows — quoted and annotated by Willison on June 9.",
-          "url": "https://simonwillison.net/2026/Jun/9/andrej-karpathy/",
+          "title": "Simon Willison: initial impressions of Claude Fable 5",
+          "summary": "After 5.5 hours of testing, Willison calls Fable \"a beast\" with a \"big model smell\" — slow and expensive but markedly more capable, and walks through using it to build a Python sandbox and extend Datasette Agent.",
+          "url": "https://simonwillison.net/2026/Jun/9/",
           "source": "Simon Willison",
           "type": "blog",
-          "importance": 2
+          "importance": 2,
+          "publishedAt": "2026-06-09"
         },
         {
-          "title": "Boris Cherny × Karpathy on coding's endgame",
-          "summary": "The Claude Code creator says he hasn't handwritten code in months and manages fleets of agents; the two debate whether AI-written code means evolution or a coming \"slopocalypse\".",
-          "url": "https://eu.36kr.com/en/p/3668658715829123",
-          "source": "36Kr",
-          "type": "news",
-          "importance": 2
+          "title": "Ethan Mollick on living with Fable 5",
+          "summary": "Mollick reports \"a genuine jump in capability,\" especially on long-running tasks — while flagging as \"weird\" that Anthropic may pull subscription access to Fable within two weeks.",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mnuoxdl7qk2e",
+          "source": "Ethan Mollick",
+          "type": "tweet",
+          "importance": 1,
+          "publishedAt": "2026-06-09"
         }
       ]
     }

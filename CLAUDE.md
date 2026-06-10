@@ -38,8 +38,9 @@ written by Claude each morning.
 - Never fabricate news items, URLs, or quotes — every brief item must come from a
   real source found during research. When in doubt, leave it out.
 - Brief JSON must satisfy `scripts/validate-brief.mjs` (schema + index consistency).
-  Section ids: `labs`, `research`, `engineering`, `safety-psych`, `voices`.
-- Keep the UI typographic and minimal — newspaper, not dashboard. No images, no
-  boxes where a hairline rule will do.
+  Section ids: `labs`, `research`, `engineering`, `safety-psych`, `voices`, `lab-blogs`.
+- Keep the UI typographic and minimal — newspaper, not dashboard. The only images
+  are small grayscale article thumbnails from the linked page's own `og:image`
+  (never guessed); no boxes where a hairline rule will do.
 - Run `pnpm typecheck && pnpm lint` after app-code changes; `pnpm validate` after
   data changes.

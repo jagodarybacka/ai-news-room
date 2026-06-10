@@ -60,6 +60,9 @@ function validateHeadline(headline, ctx, briefDate) {
     if (!isNonEmptyString(headline[field])) fail(`${ctx}: headline.${field} missing or empty`)
   }
   if (headline.url && !isHttpUrl(headline.url)) fail(`${ctx}: headline.url is not a valid http(s) URL`)
+  if (headline.imageUrl != null && !isHttpUrl(headline.imageUrl)) {
+    fail(`${ctx}: headline.imageUrl is not a valid http(s) URL`)
+  }
   validatePublishedAt(headline.publishedAt, `${ctx}: headline`, { briefDate })
 }
 
@@ -71,6 +74,9 @@ function validateItem(item, ctx, { summaryOptional = false, briefDate }) {
     if (!isNonEmptyString(item[field])) fail(`${ctx}: ${field} missing or empty`)
   }
   if (item.url && !isHttpUrl(item.url)) fail(`${ctx}: url is not a valid http(s) URL`)
+  if (item.imageUrl != null && !isHttpUrl(item.imageUrl)) {
+    fail(`${ctx}: imageUrl is not a valid http(s) URL`)
+  }
   if (!ITEM_TYPES.includes(item.type)) fail(`${ctx}: type "${item.type}" not in ${ITEM_TYPES.join("|")}`)
   if (![1, 2, 3].includes(item.importance)) fail(`${ctx}: importance "${item.importance}" must be 1, 2 or 3`)
   if (typeof item.summary === "string" && item.summary.length > MAX_SUMMARY_LENGTH) {

@@ -33,14 +33,24 @@ Use WebSearch (and WebFetch for must-check pages) to cover, in this order:
    include the section with an empty items array.
 2. **Frontier labs** — check each lab source for announcements and releases.
 3. **Research** — new papers/posts: alignment, interpretability, evals, plus notable
-   arXiv entries. Skim the Alignment Forum frontpage.
+   arXiv entries. Skim the Alignment Forum frontpage and the Hugging Face daily
+   papers API (see "Community pulse" in SOURCES.md) — community upvotes show
+   which papers are genuinely trending.
 4. **AI for engineers** — coding-agent and tooling news, notable engineering posts,
-   high-traction Hacker News AI threads.
+   high-traction Hacker News AI threads. Use the HN Algolia API endpoints from
+   the "Community pulse" table in SOURCES.md (front page + points-filtered topic
+   searches) rather than eyeballing the homepage.
 5. **Minds & machines** — run the targeted searches listed in SOURCES.md
    (sycophancy, cognitive debt, companionship, dark patterns, AI × mental health).
-6. **Voices** — for each tracked person: check their blog; then best-effort search
+6. **Voices** — for each tracked person: check their blog; fetch their Bluesky
+   author feed if the table lists a verified handle; then best-effort search
    for impactful X posts (e.g. `site:x.com @handle` or news coverage of viral posts).
    Missing tweets is acceptable; inventing them is not.
+7. **Community pulse** — sweep the remaining "Community pulse" sources in
+   SOURCES.md (Lobsters, Reddit via web search). Use what you find two ways:
+   high-signal discussions can become items in their best-fit section, and the
+   overall mood should inform the section editor's notes. Never invent
+   engagement numbers; if you cite traction, it must come from the API/page.
 
 Rules:
 - Every item MUST have a real, working URL you actually found during research.
@@ -55,6 +65,11 @@ Rules:
 - Record the verified date: every item (and the headline) gets a `publishedAt`
   field (YYYY-MM-DD). The validator rejects briefs with missing, future, or
   stale dates — there is no "unknown date" escape hatch; unverifiable means drop.
+- Images, best-effort: when you fetch an article page anyway, look for its
+  `og:image` (or `twitter:image`) meta tag and record the URL as `imageUrl` on
+  the item (and headline). Only use URLs you actually saw in the page markup —
+  never construct or guess one. Skip generic logos/placeholder images and the
+  lab-blogs wire; an item without an image is completely fine.
 - Deduplicate across sections; pick the best-fit section per story (a major
   lab-blog post can appear both in the wire AND as a curated item).
 
