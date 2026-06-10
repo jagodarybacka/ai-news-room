@@ -84,6 +84,17 @@ git commit -m "brief: <YYYY-MM-DD>"
 git push
 ```
 
-GitHub Actions builds and deploys the site from main. Finish by replying with a
-3-line summary: headline story, item counts per section, anything noteworthy that
-was deliberately left out.
+GitHub Actions builds and deploys the site from main.
+
+## 7. Friday only: the weekly digest
+
+If today is a Friday, after pushing the daily brief, also produce "The Week in
+AI": follow `.claude/commands/weekly-digest.md` from start to finish (it reads
+the week's briefs from disk — no new research — then validates, commits, and
+pushes separately).
+
+## 8. Report
+
+Finish by replying with a 3-line summary: headline story, item counts per
+section, anything noteworthy that was deliberately left out. On Fridays, add a
+fourth line summarizing the weekly digest.

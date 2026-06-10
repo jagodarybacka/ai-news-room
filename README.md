@@ -25,9 +25,11 @@ yesterday. Titles, short summaries, links — nothing more.
       → git commit + push
       → GitHub Actions builds & deploys to Pages
 
-Fri   claude "/weekly-digest"          # synthesizes the week's briefs into
+      on Fridays the same run also synthesizes the week's briefs into
       → public/data/weekly/YYYY-MM-DD.json   "The Week in AI" (no new research)
 ```
+
+`claude "/weekly-digest"` can also be run standalone to (re)build a weekly.
 
 Subscribe via the Atom feed at `/ai-news-room/feed.xml` (generated at build time).
 
