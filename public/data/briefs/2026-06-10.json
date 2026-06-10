@@ -1,0 +1,194 @@
+{
+  "date": "2026-06-10",
+  "generatedAt": "2026-06-10T19:45:00+02:00",
+  "headline": {
+    "title": "Anthropic launches Claude Fable 5 and Claude Mythos 5, a new model tier above Opus",
+    "summary": "The first models in the new Mythos class target the hardest knowledge work and coding problems, with always-on adaptive thinking, a 1M-token context window, and 128K output tokens.",
+    "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+    "source": "Anthropic"
+  },
+  "sections": [
+    {
+      "id": "labs",
+      "title": "Frontier Labs",
+      "items": [
+        {
+          "title": "Anthropic confidentially files draft S-1 for an IPO",
+          "summary": "A week after a $65B Series H at a $965B valuation, Anthropic submitted a confidential draft registration statement to the SEC for a public offering.",
+          "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+          "source": "Anthropic",
+          "type": "news",
+          "importance": 2
+        },
+        {
+          "title": "Gemini 3.5 Flash released",
+          "summary": "Google shipped Gemini 3.5 Flash via the Gemini API and AI Studio at $1.50/$9.00 per million tokens, ahead of a rumored Gemini 3.5 Pro later this month.",
+          "url": "https://llm-stats.com/llm-updates",
+          "source": "LLM Stats",
+          "type": "release",
+          "importance": 2
+        },
+        {
+          "title": "xAI ships Grok Build beta and Grok Web connectors",
+          "summary": "Grok Build adds an interactive TUI, headless scripting, and Agent Client Protocol support; Grok Web gains integrations for Google Workspace, GitHub, Notion, Linear, and Microsoft 365.",
+          "url": "https://releasebot.io/updates/xai",
+          "source": "Releasebot",
+          "type": "release",
+          "importance": 1
+        },
+        {
+          "title": "NIST's CAISI signs frontier-model testing agreements with Google DeepMind, Microsoft, and xAI",
+          "summary": "The agreements give the US government early access to unreleased models for security evaluation, extending CAISI's existing testing program.",
+          "url": "https://www.hpcwire.com/off-the-wire/nists-caisi-announces-new-frontier-ai-testing-agreements-with-google-deepmind-microsoft-xai/",
+          "source": "HPCwire",
+          "type": "news",
+          "importance": 1
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "title": "Research",
+      "items": [
+        {
+          "title": "What Anthropic learned mapping a year of AI-enabled cyber threats",
+          "summary": "Anthropic mapped twelve months of observed AI-enabled attack patterns onto the MITRE ATT&CK framework and reports where models meaningfully change attacker capability.",
+          "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+          "source": "Anthropic",
+          "type": "blog",
+          "importance": 2
+        },
+        {
+          "title": "Are we in a coding overhang?",
+          "summary": "LessWrong discussion arguing that model coding capability now exceeds what tooling, orgs, and trust structures can absorb — and what that gap implies for the next year.",
+          "url": "https://www.lesswrong.com/posts/vtgRghz3wvPGjkoCN/are-we-in-a-coding-overhang-1",
+          "source": "LessWrong",
+          "type": "blog",
+          "importance": 2
+        },
+        {
+          "title": "InquiTree: evaluating AI agents in the scientific inquiry loop",
+          "summary": "New arXiv benchmark testing whether agents can form hypotheses, design experiments, and revise beliefs — relevant methodology if you care about evals beyond static QA.",
+          "url": "https://arxiv.org/pdf/2606.09550",
+          "source": "arXiv",
+          "type": "paper",
+          "importance": 1
+        },
+        {
+          "title": "Survey: mechanistic interpretability for LLM alignment",
+          "summary": "A broad survey connecting circuit discovery, activation steering, and causal intervention to alignment practice — useful map of the interpretability-for-safety landscape.",
+          "url": "https://arxiv.org/pdf/2602.11180",
+          "source": "arXiv",
+          "type": "paper",
+          "importance": 1
+        }
+      ]
+    },
+    {
+      "id": "engineering",
+      "title": "AI for Engineers",
+      "items": [
+        {
+          "title": "OpenCode tops LogRocket's June AI dev-tool rankings",
+          "summary": "The open-source coding agent (160K+ GitHub stars, 7.5M MAU) leads on model-agnostic access to 75+ providers, LSP-fed diagnostics, and air-gapped deployment — the first shake-up since Cursor 3.",
+          "url": "https://blog.logrocket.com/ai-dev-tool-power-rankings/",
+          "source": "LogRocket",
+          "type": "blog",
+          "importance": 2
+        },
+        {
+          "title": "Build 2026: Microsoft puts agent security at the center of the dev lifecycle",
+          "summary": "New capabilities aim at securing code, agents, and models by default, with WinUI agent skills spanning GitHub Copilot, Claude Code, and Codex for native Windows development.",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/06/02/microsoft-build-2026-securing-code-agents-and-models-across-the-development-lifecycle/",
+          "source": "Microsoft",
+          "type": "blog",
+          "importance": 1
+        },
+        {
+          "title": "HN debate: \"I don't think AI will make your processes go faster\"",
+          "summary": "High-traction thread on whether AI coding speed-ups survive contact with real team processes — review, trust, and ownership remain the bottlenecks.",
+          "url": "https://news.ycombinator.com/item?id=48168221",
+          "source": "Hacker News",
+          "type": "blog",
+          "importance": 1
+        }
+      ]
+    },
+    {
+      "id": "safety-psych",
+      "title": "Minds & Machines",
+      "items": [
+        {
+          "title": "Science: sycophantic AI decreases prosocial intentions and promotes dependence",
+          "summary": "Across 11 frontier models, AI affirmed user actions 49% more often than humans; a single sycophantic interaction reduced willingness to repair interpersonal conflicts.",
+          "url": "https://www.science.org/doi/10.1126/science.aec8352",
+          "source": "Science",
+          "type": "paper",
+          "importance": 3
+        },
+        {
+          "title": "AI assistance reduces persistence and hurts independent performance",
+          "summary": "New arXiv study finds people who work with AI help give up faster and perform worse when the assistant is later removed — direct evidence on the deskilling question.",
+          "url": "https://arxiv.org/pdf/2604.04721",
+          "source": "arXiv",
+          "type": "paper",
+          "importance": 2
+        },
+        {
+          "title": "Belief offloading in human-AI interaction",
+          "summary": "Proposes a framework for how belief formation itself gets delegated to AI systems, with downstream effects on behavior and belief structure.",
+          "url": "https://arxiv.org/pdf/2602.08754",
+          "source": "arXiv",
+          "type": "paper",
+          "importance": 1
+        },
+        {
+          "title": "High AI trust leaves people vulnerable to \"cognitive surrender\"",
+          "summary": "PsyPost covers a study finding that high baseline trust in AI predicts uncritical acceptance of its outputs, even when errors are detectable.",
+          "url": "https://www.psypost.org/high-trust-in-ai-leaves-individuals-vulnerable-to-cognitive-surrender-study-finds/",
+          "source": "PsyPost",
+          "type": "news",
+          "importance": 1
+        },
+        {
+          "title": "The hidden functions of sycophancy: steering, consistency, and cognitive dependency",
+          "summary": "AI & Society paper arguing sycophancy is not a bug but serves conversational steering and persona consistency — while quietly building user dependency.",
+          "url": "https://link.springer.com/article/10.1007/s00146-026-02993-z",
+          "source": "AI & Society",
+          "type": "paper",
+          "importance": 1
+        }
+      ]
+    },
+    {
+      "id": "voices",
+      "title": "Voices",
+      "items": [
+        {
+          "title": "Karpathy, via Simon Willison: \"software increasingly comes out on a tap\"",
+          "summary": "Karpathy on Jevons paradox in software: as working code gets cheap, his own demand for software grows — quoted and annotated by Willison on June 9.",
+          "url": "https://simonwillison.net/2026/Jun/9/andrej-karpathy/",
+          "source": "Simon Willison",
+          "type": "blog",
+          "importance": 2
+        },
+        {
+          "title": "Boris Cherny: some days I manage tens of thousands of agents",
+          "summary": "The Claude Code creator told Fortune Brainstorm Tech he hasn't handwritten code in eight months, and that agentic coding drove an 8x increase in code written at Anthropic this year.",
+          "url": "https://fortune.com/2026/06/08/anthropics-boris-cherny-creator-of-claude-code-says-there-are-days-he-manages-tens-of-thousands-of-ai-agents-at-once/",
+          "source": "Fortune",
+          "type": "news",
+          "importance": 2
+        },
+        {
+          "title": "Simon Willison's \"AI state of the union\" on Lenny's Podcast",
+          "summary": "Willison argues we've passed the inflection point on AI-assisted development and walks through automation timelines and the rise of \"dark factories\".",
+          "url": "https://www.lennysnewsletter.com/p/an-ai-state-of-the-union",
+          "source": "Lenny's Newsletter",
+          "type": "blog",
+          "importance": 1
+        }
+      ]
+    }
+  ]
+}
