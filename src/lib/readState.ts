@@ -1,4 +1,6 @@
 import { useSyncExternalStore } from "react"
+import type { MouseEvent } from "react"
+import type { SectionId } from "./types"
 
 // Per-article reader state, keyed by URL, persisted in localStorage only.
 // `saved` entries carry enough metadata to render the reading list without
@@ -12,6 +14,9 @@ export interface ItemState {
   title?: string
   source?: string
   briefDate?: string
+  summary?: string
+  sectionId?: SectionId
+  sectionTitle?: string
 }
 
 export interface ItemMeta {
@@ -19,6 +24,9 @@ export interface ItemMeta {
   title: string
   source: string
   briefDate?: string
+  summary?: string
+  sectionId?: SectionId
+  sectionTitle?: string
 }
 
 const STORAGE_KEY = "ai-news-room:item-state:v1"
@@ -65,6 +73,27 @@ export function toggleStatus(meta: ItemMeta, status: ItemStatus) {
   })
 }
 
+/** Idempotent: opening an article marks it read, never un-reads it. */
+export function markRead(meta: ItemMeta) {
+  if (states[meta.url]?.status === "read") return
+  patch(meta.url, {
+    status: "read",
+    title: meta.title,
+    source: meta.source,
+    briefDate: meta.briefDate,
+  })
+}
+
+/** Handlers for article links: left- and middle-click both mark as read. */
+export function markReadOnClick(meta: ItemMeta) {
+  return {
+    onClick: () => markRead(meta),
+    onAuxClick: (event: MouseEvent) => {
+      if (event.button === 1) markRead(meta)
+    },
+  }
+}
+
 export function toggleSaved(meta: ItemMeta) {
   const saved = states[meta.url]?.savedAt !== undefined
   patch(meta.url, {
@@ -72,7 +101,25 @@ export function toggleSaved(meta: ItemMeta) {
     title: meta.title,
     source: meta.source,
     briefDate: meta.briefDate,
+    summary: saved ? undefined : meta.summary,
+    sectionId: saved ? undefined : meta.sectionId,
+    sectionTitle: saved ? undefined : meta.sectionTitle,
   })
+}
+
+/** Phase-2 right-swipe: mark read and remove from reading list in one commit. */
+export function finishSaved(meta: ItemMeta) {
+  patch(meta.url, {
+    status: "read",
+    savedAt: undefined,
+    title: meta.title,
+    source: meta.source,
+    briefDate: meta.briefDate,
+  })
+}
+
+export function getItemStates(): Record<string, ItemState> {
+  return states
 }
 
 function subscribe(notify: () => void) {

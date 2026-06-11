@@ -6,7 +6,7 @@ import {
   useState,
   type ReactNode,
 } from "react"
-import { toggleSaved, toggleStatus, type ItemMeta } from "./readState"
+import { markRead, toggleSaved, toggleStatus, type ItemMeta } from "./readState"
 
 // Newsreader keys over the brief: j/k move a selection marker through the
 // items in reading order, the rest act on the selected item.
@@ -57,7 +57,10 @@ export function KeyboardNavProvider({
           break
         case "o":
         case "Enter":
-          if (item) window.open(item.url, "_blank", "noopener,noreferrer")
+          if (item) {
+            window.open(item.url, "_blank", "noopener,noreferrer")
+            markRead(item)
+          }
           break
         case "r":
           if (item) toggleStatus(item, "read")
