@@ -43,14 +43,17 @@ Use WebSearch (and WebFetch for must-check pages) to cover, in this order:
 5. **Minds & machines** — run the targeted searches listed in SOURCES.md
    (sycophancy, cognitive debt, companionship, dark patterns, AI × mental health).
 6. **Voices** — for each tracked person: check their blog; fetch their Bluesky
-   author feed if the table lists a verified handle; then best-effort search
-   for impactful X posts (e.g. `site:x.com @handle` or news coverage of viral posts).
+   author feed if the table lists a verified handle; then search X using
+   `site:x.com "@<handle>" after:<YYYY-MM-DD>` (use the research window start date).
    Missing tweets is acceptable; inventing them is not.
 7. **Community pulse** — sweep the remaining "Community pulse" sources in
-   SOURCES.md (Lobsters, Reddit via web search). Use what you find two ways:
-   high-signal discussions can become items in their best-fit section, and the
-   overall mood should inform the section editor's notes. Never invent
-   engagement numbers; if you cite traction, it must come from the API/page.
+   SOURCES.md (Lobsters, Reddit, X). For Reddit use per-subreddit searches:
+   `site:reddit.com/r/LocalLLaMA "<topic>" after:<YYYY-MM-DD>` and equivalent for
+   r/MachineLearning and r/ClaudeAI. For X lab announcements use
+   `site:x.com "@AnthropicAI" OR site:x.com "@OpenAI" after:<YYYY-MM-DD>`.
+   Use what you find two ways: high-signal discussions can become items in their
+   best-fit section, and the overall mood should inform the section editor's notes.
+   Never invent engagement numbers; if you cite traction, it must come from the page.
 
 Rules:
 - Every item MUST have a real, working URL you actually found during research.
