@@ -55,6 +55,7 @@ export function Masthead({ date, showHero = false }: MastheadProps) {
               </NavLink>
             ))}
             <button
+              type="button"
               onClick={toggle}
               aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
               className="ml-1 rounded-full p-1.5 text-muted-foreground transition-colors hover:bg-secondary/60 hover:text-foreground"

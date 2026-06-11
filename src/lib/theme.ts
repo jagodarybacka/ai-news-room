@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react"
+import { useCallback, useEffect, useRef, useState } from "react"
 
 type Theme = "light" | "dark"
 
@@ -14,10 +14,18 @@ function applyTheme(theme: Theme) {
 
 export function useTheme() {
   const [theme, setTheme] = useState<Theme>(getInitialTheme)
+  const userChose = useRef(false)
 
   useEffect(() => {
     applyTheme(theme)
-    localStorage.setItem("theme", theme)
+    // Only persist once the user has explicitly toggled — don't lock in the
+    // OS default so that prefers-color-scheme changes remain effective for
+    // users who never manually chose a theme.
+    if (userChose.current) {
+      localStorage.setItem("theme", theme)
+    } else {
+      userChose.current = true
+    }
   }, [theme])
 
   const toggle = useCallback(() => {
