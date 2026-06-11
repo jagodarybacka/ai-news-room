@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom"
 import { Masthead } from "@/components/Masthead"
 import { NewsItemRow } from "@/components/NewsItemRow"
 import { fetchIndex, fetchWeekly, formatLongDate, formatShortDate } from "@/lib/data"
+import { markReadOnClick } from "@/lib/readState"
 import type { Weekly } from "@/lib/types"
 
 type State =
@@ -79,7 +80,7 @@ export function WeeklyPage() {
   return (
     <>
       <Masthead date={weekly.date} />
-      <section className="border-b border-foreground/20 py-8 text-center">
+      <section className="border-b border-foreground/20 pt-2 pb-8 text-center sm:pt-6">
         <p className="text-xs font-medium uppercase tracking-[0.25em] text-muted-foreground">
           The Week in AI · {formatShortDate(weekly.weekStart)} –{" "}
           {formatShortDate(weekly.weekEnd)}
@@ -89,11 +90,14 @@ export function WeeklyPage() {
         </p>
       </section>
       {weekly.themes.map((theme) => (
-        <section key={theme.title} className="mt-8">
-          <h2 className="border-b-2 border-foreground pb-1 text-sm font-bold uppercase tracking-[0.2em]">
-            {theme.title}
-          </h2>
-          <p className="mt-3 max-w-3xl font-serif text-[17px] leading-relaxed">
+        <section key={theme.title} className="mt-12">
+          <div className="flex items-baseline gap-3">
+            <h2 className="text-sm font-bold uppercase tracking-[0.2em]">
+              {theme.title}
+            </h2>
+            <span className="h-0.5 flex-1 bg-foreground opacity-30" aria-hidden />
+          </div>
+          <p className="mt-4 max-w-3xl font-serif text-[17px] leading-relaxed">
             {theme.body}
           </p>
           <ul className="mt-3 space-y-1 text-sm">
@@ -104,6 +108,12 @@ export function WeeklyPage() {
                   target="_blank"
                   rel="noreferrer"
                   className="hover:underline"
+                  {...markReadOnClick({
+                    url: link.url,
+                    title: link.title,
+                    source: link.source,
+                    briefDate: weekly.date,
+                  })}
                 >
                   {link.title}
                 </a>{" "}
@@ -115,17 +125,20 @@ export function WeeklyPage() {
           </ul>
         </section>
       ))}
-      <section className="mt-10">
-        <h2 className="border-b-2 border-foreground pb-1 text-sm font-bold uppercase tracking-[0.2em]">
-          Top Reads of the Week
-        </h2>
-        <div className="divide-y divide-border">
+      <section className="mt-12">
+        <div className="flex items-baseline gap-3">
+          <h2 className="text-sm font-bold uppercase tracking-[0.2em]">
+            Top Reads of the Week
+          </h2>
+          <span className="h-0.5 flex-1 bg-foreground opacity-30" aria-hidden />
+        </div>
+        <div className="mt-4 grid grid-cols-1 gap-x-10 sm:grid-cols-2 lg:grid-cols-3">
           {weekly.topReads.map((item) => (
             <NewsItemRow key={item.url} item={item} briefDate={weekly.date} />
           ))}
         </div>
       </section>
-      <footer className="mt-12 border-t border-foreground/20 py-6 text-center text-xs text-muted-foreground">
+      <footer className="mt-12 border-t border-foreground/20 py-8 text-center text-xs text-muted-foreground">
         Synthesized by Claude from the week's briefs ·{" "}
         <Link to="/archive" className="hover:text-foreground hover:underline">
           {formatLongDate(weekly.weekStart)} – {formatLongDate(weekly.weekEnd)}

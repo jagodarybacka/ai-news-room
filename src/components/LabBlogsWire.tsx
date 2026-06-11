@@ -1,7 +1,7 @@
 import { ItemActions } from "@/components/ItemActions"
 import { sectionInk } from "@/lib/sections"
 import { useSelectedUrl } from "@/lib/keyboardNav"
-import { useItemStates } from "@/lib/readState"
+import { markReadOnClick, useItemStates } from "@/lib/readState"
 import type { BriefSection } from "@/lib/types"
 
 // The wire: an exhaustive listing of every new post on the watched lab
@@ -19,12 +19,15 @@ export function LabBlogsWire({
   const selectedUrl = useSelectedUrl()
 
   return (
-    <section className="mt-8">
-      <h2
-        className={`border-b-2 pb-1 text-sm font-bold uppercase tracking-[0.2em] ${ink.border}`}
-      >
-        <span className={ink.text}>{section.title}</span>
-      </h2>
+    <section className="mt-12">
+      <div className="flex items-baseline gap-3">
+        <h2
+          className={`text-sm font-bold uppercase tracking-[0.2em] ${ink.text}`}
+        >
+          {section.title}
+        </h2>
+        <span className={`h-0.5 flex-1 ${ink.edge} opacity-40`} aria-hidden />
+      </div>
       {section.comment && (
         <p
           className={`mt-3 border-l-2 pl-3 font-serif text-[15px] italic leading-snug text-muted-foreground ${ink.border}`}
@@ -37,7 +40,7 @@ export function LabBlogsWire({
           Nothing new on the watched lab blogs.
         </p>
       ) : (
-        <ul className="grid grid-cols-1 gap-x-10 sm:grid-cols-2">
+        <ul className="mt-2 grid grid-cols-1 gap-x-10 sm:grid-cols-2">
           {section.items.map((item) => {
             const status = states[item.url]?.status
             const dimmed =
@@ -46,6 +49,12 @@ export function LabBlogsWire({
                 : status === "dismissed"
                   ? "opacity-30"
                   : ""
+            const meta = {
+              url: item.url,
+              title: item.title,
+              source: item.source,
+              briefDate,
+            }
             return (
               <li
                 key={item.url}
@@ -57,6 +66,7 @@ export function LabBlogsWire({
                   target="_blank"
                   rel="noreferrer"
                   className="group min-w-0 flex-1 text-sm"
+                  {...markReadOnClick(meta)}
                 >
                   <span
                     className={`text-xs font-semibold uppercase tracking-wide ${ink.text}`}
@@ -70,14 +80,7 @@ export function LabBlogsWire({
                     {item.title}
                   </span>
                 </a>
-                <ItemActions
-                  meta={{
-                    url: item.url,
-                    title: item.title,
-                    source: item.source,
-                    briefDate,
-                  }}
-                />
+                <ItemActions meta={meta} />
               </li>
             )
           })}

@@ -1,7 +1,14 @@
+import { markReadOnClick } from "@/lib/readState"
 import { sectionInk } from "@/lib/sections"
 import type { TopStory } from "@/lib/topStories"
 
-export function TopStories({ stories }: { stories: TopStory[] }) {
+export function TopStories({
+  stories,
+  briefDate,
+}: {
+  stories: TopStory[]
+  briefDate?: string
+}) {
   if (stories.length === 0) return null
 
   return (
@@ -16,6 +23,12 @@ export function TopStories({ stories }: { stories: TopStory[] }) {
               target="_blank"
               rel="noreferrer"
               className="group flex gap-3"
+              {...markReadOnClick({
+                url: story.item.url,
+                title: story.item.title,
+                source: story.item.source,
+                briefDate,
+              })}
             >
               <span
                 className={`font-serif text-4xl font-bold leading-none ${ink.text}`}

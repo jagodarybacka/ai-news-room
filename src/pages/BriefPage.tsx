@@ -79,18 +79,24 @@ export function BriefPage() {
     }))
   return (
     <KeyboardNavProvider items={navItems}>
-      <Masthead date={brief.date} />
-      {brief.headline && <HeadlineStory headline={brief.headline} />}
-      <TopStories stories={pickTopStories(brief)} />
+      <Masthead date={brief.date} showHero />
+      {brief.headline && (
+        <HeadlineStory headline={brief.headline} briefDate={brief.date} />
+      )}
+      <TopStories stories={pickTopStories(brief)} briefDate={brief.date} />
       {labBlogs && <LabBlogsWire section={labBlogs} briefDate={brief.date} />}
       {curated.map((section) => (
         <SectionBlock key={section.id} section={section} briefDate={brief.date} />
       ))}
-      <footer className="mt-12 border-t border-foreground/20 py-6 text-center text-xs text-muted-foreground">
+      <footer className="mt-16 border-t border-border py-8 text-center text-xs text-muted-foreground">
         <p className="hidden sm:block">
-          j/k navigate · o open · r read · x dismiss · s save
+          <kbd className="font-sans">j/k</kbd> navigate ·{" "}
+          <kbd className="font-sans">o</kbd> open ·{" "}
+          <kbd className="font-sans">r</kbd> read ·{" "}
+          <kbd className="font-sans">x</kbd> dismiss ·{" "}
+          <kbd className="font-sans">s</kbd> save
         </p>
-        <p className="mt-1">
+        <p className="mt-2">
           Researched and written by Claude · generated at{" "}
           {formatTime(brief.generatedAt)} ·{" "}
           <a
