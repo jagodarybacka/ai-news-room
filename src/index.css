@@ -57,7 +57,8 @@
 }
 
 :root {
-    /* Aged-paper broadsheet: yellowed newsprint, warm grey ink */
+    /* Warm paper: yellowed newsprint page, warm grey ink. Section inks carry
+       the color; structure comes from rules and whitespace, not boxes. */
     --background: oklch(0.955 0.026 97);
     --foreground: oklch(0.32 0.012 95);
     --card: oklch(0.955 0.026 97);
@@ -76,16 +77,17 @@
     --border: oklch(0.87 0.02 97);
     --input: oklch(0.87 0.02 97);
 
-    /* Section inks: print-style section flags, matched lightness so no
-       section shouts. Press red, editor's blue, manual teal, journal plum,
-       ochre, archival brown (the wire). */
+    /* Section inks: each section's identity color, used as a card top-edge,
+       tag pill, and header rule. Matched lightness so no section shouts.
+       Press red, editor's blue, manual teal, journal plum, ochre, archival
+       brown (the wire). */
     --ink-labs: oklch(0.5 0.16 27);
     --ink-research: oklch(0.48 0.1 252);
     --ink-engineering: oklch(0.5 0.09 175);
     --ink-minds: oklch(0.48 0.11 320);
     --ink-voices: oklch(0.55 0.11 75);
     --ink-wire: oklch(0.48 0.06 60);
-    --ring: oklch(0.708 0 0);
+    --ring: oklch(0.55 0.01 260);
     --chart-1: oklch(0.87 0 0);
     --chart-2: oklch(0.556 0 0);
     --chart-3: oklch(0.439 0 0);
@@ -103,23 +105,31 @@
 }
 
 .dark {
-    --background: oklch(0.145 0 0);
-    --foreground: oklch(0.985 0 0);
-    --card: oklch(0.205 0 0);
-    --card-foreground: oklch(0.985 0 0);
-    --popover: oklch(0.205 0 0);
-    --popover-foreground: oklch(0.985 0 0);
-    --primary: oklch(0.922 0 0);
-    --primary-foreground: oklch(0.205 0 0);
-    --secondary: oklch(0.269 0 0);
-    --secondary-foreground: oklch(0.985 0 0);
-    --muted: oklch(0.269 0 0);
-    --muted-foreground: oklch(0.708 0 0);
-    --accent: oklch(0.269 0 0);
-    --accent-foreground: oklch(0.985 0 0);
+    --background: oklch(0.17 0.003 260);
+    --foreground: oklch(0.96 0.002 260);
+    --card: oklch(0.205 0.004 260);
+    --card-foreground: oklch(0.96 0.002 260);
+    --popover: oklch(0.205 0.004 260);
+    --popover-foreground: oklch(0.96 0.002 260);
+    --primary: oklch(0.96 0.002 260);
+    --primary-foreground: oklch(0.205 0.004 260);
+    --secondary: oklch(0.26 0.004 260);
+    --secondary-foreground: oklch(0.96 0.002 260);
+    --muted: oklch(0.26 0.004 260);
+    --muted-foreground: oklch(0.7 0.004 260);
+    --accent: oklch(0.26 0.004 260);
+    --accent-foreground: oklch(0.96 0.002 260);
     --destructive: oklch(0.704 0.191 22.216);
-    --border: oklch(1 0 0 / 10%);
-    --input: oklch(1 0 0 / 15%);
+    --border: oklch(1 0 0 / 8%);
+    --input: oklch(1 0 0 / 12%);
+
+    /* Inks lifted for legibility on the dark surface. */
+    --ink-labs: oklch(0.68 0.17 27);
+    --ink-research: oklch(0.7 0.12 252);
+    --ink-engineering: oklch(0.72 0.11 175);
+    --ink-minds: oklch(0.7 0.13 320);
+    --ink-voices: oklch(0.75 0.12 75);
+    --ink-wire: oklch(0.68 0.06 60);
     --ring: oklch(0.556 0 0);
     --chart-1: oklch(0.87 0 0);
     --chart-2: oklch(0.556 0 0);
@@ -140,10 +150,11 @@
   * {
     @apply border-border outline-ring/50;
     }
-  body {
-    @apply bg-background text-foreground;
-    }
   html {
     @apply font-sans;
+    scroll-behavior: smooth;
+    }
+  body {
+    @apply bg-background text-foreground antialiased;
     }
 }
