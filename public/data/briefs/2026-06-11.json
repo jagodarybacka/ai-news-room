@@ -1,0 +1,151 @@
+{
+  "date": "2026-06-11",
+  "generatedAt": "2026-06-11T20:30:00+02:00",
+  "headline": {
+    "title": "Anthropic's Dario Amodei calls for mandatory, binding regulation of frontier AI",
+    "summary": "In a two-part essay published a day after the Fable 5 launch, Amodei endorses mandatory third-party testing and government power to block dangerous deployments of models trained above 10^25 FLOPs — a sharp break from Anthropic's earlier transparency-first stance — and pledges financial backing for the legislation. Critics, including Steven Sinofsky, call it a blueprint for regulatory capture.",
+    "url": "https://www.anthropic.com/policy-on-the-ai-exponential",
+    "source": "Anthropic",
+    "publishedAt": "2026-06-10"
+  },
+  "sections": [
+    {
+      "id": "lab-blogs",
+      "title": "The Lab Wire",
+      "items": [
+        {
+          "title": "Policy on the AI Exponential",
+          "url": "https://www.anthropic.com/policy-on-the-ai-exponential",
+          "source": "Anthropic",
+          "type": "news",
+          "importance": 2,
+          "publishedAt": "2026-06-10"
+        },
+        {
+          "title": "Fluid, natural voice translation with Gemini 3.5 Live Translate",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-live-3-5-translate/",
+          "source": "Google DeepMind",
+          "type": "release",
+          "importance": 1,
+          "publishedAt": "2026-06-09"
+        }
+      ]
+    },
+    {
+      "id": "labs",
+      "title": "Frontier Labs",
+      "comment": "Anthropic owned the day at both extremes — proposing the most aggressive regulatory framework any lab has backed, while apologizing for the hidden Fable safeguards it shipped 48 hours earlier.",
+      "items": [
+        {
+          "title": "Anthropic reverses hidden Fable 5 safeguards after researcher backlash",
+          "summary": "After Fable 5's system card revealed the model would silently degrade on frontier-LLM-development tasks via prompt modification, steering vectors and PEFT, Anthropic made the safeguards visible — flagged requests now fall back to Opus 4.8, and the API returns a refusal reason — conceding \"we made the wrong tradeoff and we apologize for not getting the balance right.\"",
+          "url": "https://simonwillison.net/2026/Jun/11/anthropic-walks-back-policy/",
+          "source": "Simon Willison",
+          "type": "news",
+          "importance": 3,
+          "publishedAt": "2026-06-11"
+        },
+        {
+          "title": "Google launches Gemini 3.5 Live Translate",
+          "summary": "A speech-to-speech model delivering near-real-time translation across 70+ languages while preserving the speaker's intonation, pacing and pitch; rolling out in Google Translate and Meet, with developer access via the Gemini Live API and AI Studio.",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-live-3-5-translate/",
+          "source": "Google DeepMind",
+          "type": "release",
+          "importance": 1,
+          "publishedAt": "2026-06-09"
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "title": "Research",
+      "comment": "This week's trending arXiv is all agents and autonomy — engineering the environments they learn in and frameworks that let them run research on their own.",
+      "items": [
+        {
+          "title": "Agentic Environment Engineering for Large Language Models: A Survey",
+          "summary": "A systematic survey of the environments LLM agents are trained and evaluated in — their design, automated synthesis, and evaluation — framing agent and environment as co-evolving. The top trending paper on Hugging Face this week.",
+          "url": "https://arxiv.org/abs/2606.12191",
+          "source": "arXiv",
+          "type": "paper",
+          "importance": 1,
+          "publishedAt": "2026-06-10"
+        },
+        {
+          "title": "Toward Generalist Autonomous Research via Hypothesis-Tree Refinement",
+          "summary": "Arbor is a framework for autonomous research that maintains a persistent hypothesis tree linking insights and evidence across iterative experiments, reporting large gains on real-world research-optimization tasks.",
+          "url": "https://arxiv.org/abs/2606.11926",
+          "source": "arXiv",
+          "type": "paper",
+          "importance": 1,
+          "publishedAt": "2026-06-10"
+        }
+      ]
+    },
+    {
+      "id": "engineering",
+      "title": "AI for Engineers",
+      "comment": "The Fable rollout's rough edges dominated developer chatter — over-refusals, and a chat client quietly booting a 1.8 GB VM — while a new benchmark argues the agent harness matters as much as the model.",
+      "items": [
+        {
+          "title": "Claude Desktop spawns a 1.8 GB Hyper-V VM on every launch",
+          "summary": "A widely-upvoted bug report (392 points on Hacker News) says Claude Desktop boots a 1.8 GB Hyper-V virtual machine on every start, even for chat-only use — a notable footprint for a desktop client.",
+          "url": "https://github.com/anthropics/claude-code/issues/29045",
+          "source": "GitHub",
+          "type": "blog",
+          "importance": 1,
+          "publishedAt": "2026-06-10"
+        },
+        {
+          "title": "The Register: Fable 5 refuses innocuous prompts",
+          "summary": "Reporters and users found Fable 5's safety classifiers blocking benign requests — \"it blocked us at 'hello!'\" — feeding the over-refusal complaints that pushed Anthropic to revise its safeguards.",
+          "url": "https://www.theregister.com/ai-and-ml/2026/06/10/anthropic-claude-fable-5-refuses-innocuous-prompts/5253754",
+          "source": "The Register",
+          "type": "news",
+          "importance": 1,
+          "publishedAt": "2026-06-10"
+        },
+        {
+          "title": "Claw-SWE-Bench: evaluating agent harnesses on coding tasks",
+          "summary": "A multilingual coding benchmark with adapter protocols to fairly compare OpenClaw-style agent harnesses, finding that harness and adapter design can matter as much as the underlying model.",
+          "url": "https://arxiv.org/abs/2606.12344",
+          "source": "arXiv",
+          "type": "paper",
+          "importance": 1,
+          "publishedAt": "2026-06-10"
+        }
+      ]
+    },
+    {
+      "id": "safety-psych",
+      "title": "Minds & Machines",
+      "comment": "A new JAMA Pediatrics survey puts numbers on a quiet shift: teens are taking mental-health questions to chatbots, and mostly keeping it to themselves.",
+      "items": [
+        {
+          "title": "Nearly 1 in 5 US teens use AI chatbots for mental-health advice — and most hide it",
+          "summary": "A JAMA Pediatrics survey of 1,009 youth (weighted to represent 42M) found roughly 20% have sought mental-health support from AI chatbots, and 63% kept that use secret from others — raising questions about disclosure and oversight.",
+          "url": "https://medicalxpress.com/news/2026-06-teens-ai-chatbots-mental-health.html",
+          "source": "Medical Xpress",
+          "type": "news",
+          "importance": 2,
+          "publishedAt": "2026-06-03"
+        }
+      ]
+    },
+    {
+      "id": "voices",
+      "title": "Voices",
+      "comment": "Simon Willison chronicled the Fable safeguard saga from system-card catch to climbdown, and the developer community's unease drove the reversal.",
+      "items": [
+        {
+          "title": "Simon Willison: If Claude Fable stops helping you, you'll never know",
+          "summary": "Willison flagged the Fable 5 system-card passage describing hidden, unobservable limits on frontier-LLM-development tasks — the post that helped catalyze the backlash Anthropic reversed a day later.",
+          "url": "https://simonwillison.net/2026/Jun/10/if-claude-fable-stops-helping-you/",
+          "source": "Simon Willison",
+          "type": "blog",
+          "importance": 2,
+          "publishedAt": "2026-06-10"
+        }
+      ]
+    }
+  ]
+}
