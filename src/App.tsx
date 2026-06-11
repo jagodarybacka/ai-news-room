@@ -4,6 +4,7 @@ import { ArchivePage } from "@/pages/ArchivePage"
 import { ReadingListPage } from "@/pages/ReadingListPage"
 import { WeeklyPage } from "@/pages/WeeklyPage"
 import { BrainrotButton } from "@/components/BrainrotButton"
+import { Footer } from "@/components/Footer"
 
 // HashRouter so deep links (archive, past briefs) work on GitHub Pages
 // without a 404.html rewrite hack.
@@ -19,6 +20,7 @@ function App() {
           <Route path="/archive" element={<ArchivePage />} />
           <Route path="/reading-list" element={<ReadingListPage />} />
         </Routes>
+        <Footer />
       </div>
       <BrainrotButton />
     </HashRouter>

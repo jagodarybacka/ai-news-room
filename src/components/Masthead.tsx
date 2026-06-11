@@ -1,7 +1,5 @@
 import { Link, NavLink } from "react-router-dom"
-import { Moon, Sun } from "lucide-react"
 import { formatLongDate } from "@/lib/data"
-import { useTheme } from "@/lib/theme"
 
 interface MastheadProps {
   date?: string
@@ -16,8 +14,6 @@ const navLinks = [
 ]
 
 export function Masthead({ date, showHero = false }: MastheadProps) {
-  const { theme, toggle } = useTheme()
-
   return (
     <header className={showHero ? "mb-10" : "mb-2"}>
       {/* Slim sticky utility bar: the wordmark and section nav stay reachable
@@ -54,14 +50,6 @@ export function Masthead({ date, showHero = false }: MastheadProps) {
                 )}
               </NavLink>
             ))}
-            <button
-              type="button"
-              onClick={toggle}
-              aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
-              className="ml-1 rounded-full p-1.5 text-muted-foreground transition-colors hover:bg-secondary/60 hover:text-foreground"
-            >
-              {theme === "dark" ? <Sun size={15} /> : <Moon size={15} />}
-            </button>
           </nav>
         </div>
       </div>
