@@ -89,6 +89,8 @@ cognitive debt / deskilling**, **AI companionship**, **dark patterns in LLMs**,
 ## Voices (`voices`)
 
 Blogs are reliable sources; X posts are best-effort via web search (no API).
+Use `site:x.com "@<handle>"` to find recent posts; add a date filter (`after:YYYY-MM-DD`)
+to avoid stale results. Missing tweets is acceptable; inventing them is not.
 Bluesky is reliable: fetch
 `https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=<handle>`
 (public, no auth). Only the handles listed below are identity-verified — do not
@@ -119,5 +121,5 @@ notes. All endpoints below were verified fetchable without auth.
 | Lobsters AI tag | `https://lobste.rs/t/ai.json` (low volume, high signal) |
 | Hugging Face daily papers | `https://huggingface.co/api/daily_papers` — community upvotes = which papers are actually trending (feeds `research`) |
 | Bluesky | author feeds for the voices table above (see Voices) |
-| Reddit | direct fetch is blocked (403) — use web search instead: `site:reddit.com` + topic, focusing r/LocalLLaMA (open-weights mood), r/MachineLearning (research), r/ClaudeAI and r/OpenAI (product sentiment) |
-| X | no free API; viral posts surface via web search and news coverage only — never fabricate engagement numbers |
+| Reddit | direct fetch is blocked — use targeted web searches. Per-subreddit patterns: `site:reddit.com/r/LocalLLaMA "<keyword>"`, `site:reddit.com/r/MachineLearning "<keyword>"`, `site:reddit.com/r/ClaudeAI OR site:reddit.com/r/OpenAI "<keyword>"`. Add `after:YYYY-MM-DD` to filter by recency. Thread comment count signals genuine engagement. r/LocalLLaMA = open-weights mood; r/MachineLearning = research reactions; r/ClaudeAI + r/OpenAI = product sentiment. |
+| X | no free API — use targeted web searches: `site:x.com "@handle" "<keyword>"` for tracked voices (handles in the Voices table above); `"<keyword>" site:x.com` with `after:YYYY-MM-DD` for recency. For lab announcements: `site:x.com "@AnthropicAI" OR site:x.com "@OpenAI" OR site:x.com "@GoogleDeepMind"`. News coverage of viral posts is also reliable. Never fabricate engagement numbers. |
