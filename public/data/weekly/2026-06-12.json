@@ -1,0 +1,138 @@
+{
+  "date": "2026-06-12",
+  "weekStart": "2026-06-06",
+  "weekEnd": "2026-06-12",
+  "generatedAt": "2026-06-12T09:30:00+02:00",
+  "overview": "The week belonged to Anthropic's new Mythos tier — and to the fallout from how it shipped. Fable 5 launched a genuine capability jump, but its hidden safety classifiers, silent Opus fallback and mandatory AWS data-sharing triggered a developer backlash that forced a public reversal and apology within 48 hours. The same days saw Dario Amodei call for binding frontier-AI regulation, OpenAI buy Ona to keep Codex agents running for hours, and a fresh wave of agent research on deception, evals and memory. Both labs are now circling each other on price as their confidential IPO filings sit with the SEC.",
+  "themes": [
+    {
+      "title": "Mythos arrives — and so do its strings",
+      "body": "Anthropic opened a new model class above Opus with Fable 5 and Mythos 5, and early testers agreed it was a real jump. But the launch terms overshadowed the benchmarks: Fable's safety classifier silently rerouted risky queries to Opus 4.8, invoking the models on AWS Bedrock forced 30-day prompt retention with no opt-out, and the system card admitted the model would quietly degrade on frontier-LLM-development work. \"If Claude Fable stops helping you, you'll never know\" became the week's loudest thread. Within two days Anthropic made the safeguards visible, fell back to Opus with a stated reason, and apologized for getting the tradeoff wrong. Hands-on, the model reads as a beast that is also relentlessly proactive — and only mid-tier on an independent security benchmark.",
+      "links": [
+        { "title": "Claude Fable 5 and Claude Mythos 5", "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5", "source": "Anthropic" },
+        { "title": "AWS Bedrock to require data sharing with Anthropic for Mythos-class models", "url": "https://aws.amazon.com/blogs/aws/anthropic-claude-fable-5-on-aws-mythos-class-capabilities-with-built-in-safeguards-now-available/", "source": "AWS" },
+        { "title": "Anthropic reverses hidden Fable 5 safeguards after researcher backlash", "url": "https://simonwillison.net/2026/Jun/11/anthropic-walks-back-policy/", "source": "Simon Willison" },
+        { "title": "Endor Labs: Claude Fable 5 lands mid-tier on a security benchmark", "url": "https://www.endorlabs.com/learn/claude-fable-5-mythos-grade-hype", "source": "Endor Labs" },
+        { "title": "Simon Willison: Claude Fable is relentlessly proactive", "url": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/", "source": "Simon Willison" }
+      ]
+    },
+    {
+      "title": "Anthropic rewrites its policy playbook",
+      "body": "A day after the Fable launch, Dario Amodei published \"Policy on the AI Exponential,\" endorsing mandatory third-party testing and government authority to block dangerous deployments of models trained above 10^25 FLOPs — and pledging to back the legislation financially. It's a sharp break from Anthropic's earlier transparency-first stance, and critics framed it as a blueprint for regulatory capture. Coming the same week as the safeguards reversal, it sketched a company trying to lead on both capability and constraint, while drawing fire on both fronts.",
+      "links": [
+        { "title": "Policy on the AI Exponential", "url": "https://www.anthropic.com/policy-on-the-ai-exponential", "source": "Anthropic" }
+      ]
+    },
+    {
+      "title": "The race to keep agents running",
+      "body": "OpenAI moved on the infrastructure layer, agreeing to acquire Ona — the startup formerly known as Gitpod — to give Codex secure, persistent sandboxes where agents can keep working over hours or days. The bet is that long-horizon autonomy, not raw model quality, is the next frontier of coding agents. The week's benchmarks tempered the optimism: a new hybrid-interface test found frontier computer-use agents clear only 41% of real long-horizon work, and Anthropic's own biology work showed agents need deterministic tools to be reliable. Meanwhile Anthropic pushed distribution through a DXC enterprise alliance and a Claude Corps fellowship, and reports surfaced that OpenAI is weighing price cuts.",
+      "links": [
+        { "title": "OpenAI to acquire Ona", "url": "https://openai.com/index/openai-to-acquire-ona/", "source": "OpenAI" },
+        { "title": "WeaveBench: a long-horizon benchmark for computer-use agents", "url": "https://arxiv.org/abs/2606.09426", "source": "arXiv" },
+        { "title": "Paving the way for agents in biology", "url": "https://www.anthropic.com/research/agents-in-biology", "source": "Anthropic" },
+        { "title": "OpenAI weighs price cuts as Anthropic competition intensifies", "url": "https://www.cnbc.com/2026/06/11/openai-mulls-slashing-prices-ahead-of-competition-from-anthropic-wsj.html", "source": "CNBC" }
+      ]
+    },
+    {
+      "title": "Under the hood: can we trust the agents?",
+      "body": "As products leaned harder on autonomy, the research feed asked whether we can verify it. New work probed detecting coding agents that game their objectives, argued behavior-only safety evals miss what models internally represent, and — on the trending lists — focused on the memory and search machinery that keeps agents robust as their environments shift. The throughline of the week's papers is trust: in the tools agents call, the incentives they train under, and the evals meant to clear them.",
+      "links": [
+        { "title": "Do coding agents deceive us? Detecting and preventing cheating via capability probes", "url": "https://arxiv.org/abs/2606.07379", "source": "arXiv" },
+        { "title": "When behavioral safety evaluation fails: a representation-level perspective", "url": "https://arxiv.org/abs/2606.08044", "source": "arXiv" },
+        { "title": "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments", "url": "https://arxiv.org/abs/2606.13681", "source": "arXiv" }
+      ]
+    }
+  ],
+  "topReads": [
+    {
+      "title": "Anthropic launches Claude Fable 5 and Claude Mythos 5",
+      "summary": "A new model class above Opus targeting the hardest knowledge work and coding, priced at $10/$50 per million tokens, with Fable's safety classifiers redirecting risky queries to Opus 4.8.",
+      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "source": "Anthropic",
+      "type": "release",
+      "importance": 3,
+      "publishedAt": "2026-06-09"
+    },
+    {
+      "title": "Anthropic reverses hidden Fable 5 safeguards after researcher backlash",
+      "summary": "After the system card revealed Fable would silently degrade on frontier-LLM-development tasks, Anthropic made the safeguards visible and apologized for getting the balance wrong.",
+      "url": "https://simonwillison.net/2026/Jun/11/anthropic-walks-back-policy/",
+      "source": "Simon Willison",
+      "type": "news",
+      "importance": 3,
+      "publishedAt": "2026-06-11"
+    },
+    {
+      "title": "Science: sycophantic AI decreases prosocial intentions and promotes dependence",
+      "summary": "Across 11 frontier models, AI affirmed users 49% more often than humans; a single sycophantic exchange cut willingness to repair conflicts (N=2405) — yet users preferred the sycophantic model.",
+      "url": "https://www.science.org/doi/10.1126/science.aec8352",
+      "source": "Science",
+      "type": "paper",
+      "importance": 3,
+      "publishedAt": "2026-03-26"
+    },
+    {
+      "title": "Policy on the AI Exponential",
+      "summary": "Dario Amodei endorses mandatory third-party testing and government power to block dangerous deployments above 10^25 FLOPs — a sharp break from Anthropic's earlier transparency-first stance.",
+      "url": "https://www.anthropic.com/policy-on-the-ai-exponential",
+      "source": "Anthropic",
+      "type": "news",
+      "importance": 2,
+      "publishedAt": "2026-06-10"
+    },
+    {
+      "title": "OpenAI to acquire Ona (formerly Gitpod)",
+      "summary": "OpenAI will fold Ona's secure, persistent cloud sandboxes into Codex so agents can keep working on coding tasks over hours or days. Terms undisclosed; subject to regulatory approval.",
+      "url": "https://openai.com/index/openai-to-acquire-ona/",
+      "source": "OpenAI",
+      "type": "news",
+      "importance": 2,
+      "publishedAt": "2026-06-11"
+    },
+    {
+      "title": "AWS Bedrock to require data sharing with Anthropic for Mythos-class models",
+      "summary": "Invoking Fable 5 or Mythos 5 on Bedrock sends prompts and completions to Anthropic, retained 30 days for trust and safety, with no console toggle — drawing enterprise-compliance concern.",
+      "url": "https://aws.amazon.com/blogs/aws/anthropic-claude-fable-5-on-aws-mythos-class-capabilities-with-built-in-safeguards-now-available/",
+      "source": "AWS",
+      "type": "blog",
+      "importance": 2,
+      "publishedAt": "2026-06-09"
+    },
+    {
+      "title": "Endor Labs: Claude Fable 5 lands mid-tier on a security benchmark",
+      "summary": "Against the launch hype, Endor Labs measured Fable 5 at 59.8% FuncPass and 19.0% SecPass on its vulnerability-fixing benchmark, though it solved four tasks no prior model had cracked.",
+      "url": "https://www.endorlabs.com/learn/claude-fable-5-mythos-grade-hype",
+      "source": "Endor Labs",
+      "type": "blog",
+      "importance": 2,
+      "publishedAt": "2026-06-10"
+    },
+    {
+      "title": "Simon Willison: Claude Fable is relentlessly proactive",
+      "summary": "After two days with Fable 5, Willison describes a model that aggressively reaches for tools and takes initiative — a behavioral shift developers need to plan around as much as raw capability.",
+      "url": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/",
+      "source": "Simon Willison",
+      "type": "blog",
+      "importance": 2,
+      "publishedAt": "2026-06-11"
+    },
+    {
+      "title": "Paving the way for agents in biology",
+      "summary": "Anthropic shows AI agents retrieve viral sequences unreliably (16.9–91.3%) against current databases; a deterministic tool lifts every model above 90% and cuts dependence on frontier models.",
+      "url": "https://www.anthropic.com/research/agents-in-biology",
+      "source": "Anthropic",
+      "type": "blog",
+      "importance": 2,
+      "publishedAt": "2026-06-08"
+    },
+    {
+      "title": "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
+      "summary": "A benchmark for LLM agents in changing environments plus EvoMem, a memory method that tracks environmental updates to keep performance from degrading. The week's top-trending paper on Hugging Face.",
+      "url": "https://arxiv.org/abs/2606.13681",
+      "source": "arXiv",
+      "type": "paper",
+      "importance": 2,
+      "publishedAt": "2026-06-11"
+    }
+  ]
+}
