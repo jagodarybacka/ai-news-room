@@ -1,0 +1,148 @@
+{
+  "date": "2026-06-12",
+  "generatedAt": "2026-06-12T09:05:00+02:00",
+  "headline": {
+    "title": "OpenAI to acquire Ona (formerly Gitpod) to give Codex long-running agents",
+    "summary": "OpenAI agreed to acquire the German startup Ona — previously known as Gitpod — and fold its team into Codex, citing Ona's secure, persistent cloud sandboxes as the foundation for letting agents keep working on coding tasks over hours or days, even after a user closes their laptop. Terms were undisclosed and the deal is subject to regulatory approval.",
+    "url": "https://openai.com/index/openai-to-acquire-ona/",
+    "source": "OpenAI",
+    "publishedAt": "2026-06-11"
+  },
+  "sections": [
+    {
+      "id": "lab-blogs",
+      "title": "The Lab Wire",
+      "items": [
+        {
+          "title": "OpenAI to acquire Ona",
+          "url": "https://openai.com/index/openai-to-acquire-ona/",
+          "source": "OpenAI",
+          "type": "news",
+          "importance": 2,
+          "publishedAt": "2026-06-11"
+        },
+        {
+          "title": "Introducing Claude Corps",
+          "url": "https://www.anthropic.com/news/claude-corps",
+          "source": "Anthropic",
+          "type": "news",
+          "importance": 1,
+          "publishedAt": "2026-06-11"
+        },
+        {
+          "title": "DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
+          "url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
+          "source": "Anthropic",
+          "type": "news",
+          "importance": 1,
+          "publishedAt": "2026-06-11"
+        }
+      ]
+    },
+    {
+      "id": "labs",
+      "title": "Frontier Labs",
+      "comment": "OpenAI is buying the infrastructure to keep Codex agents running for hours while Anthropic stacks enterprise and civic moves — and the WSJ reports the two are now circling a price war.",
+      "items": [
+        {
+          "title": "Anthropic launches Claude Corps fellowship",
+          "summary": "A fellowship for people early in their careers \"passionate about extending the benefits of AI to communities across America\" — Anthropic's latest civic-facing program alongside its enterprise pushes.",
+          "url": "https://www.anthropic.com/news/claude-corps",
+          "source": "Anthropic",
+          "type": "news",
+          "importance": 1,
+          "publishedAt": "2026-06-11"
+        },
+        {
+          "title": "DXC to embed Claude in regulated-industry systems",
+          "summary": "Anthropic announced an alliance with IT services firm DXC to integrate Claude into the core systems that banks, airlines, and other regulated industries depend on — an enterprise distribution play.",
+          "url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
+          "source": "Anthropic",
+          "type": "news",
+          "importance": 1,
+          "publishedAt": "2026-06-11"
+        },
+        {
+          "title": "OpenAI weighs price cuts as Anthropic competition intensifies",
+          "summary": "CNBC, citing the WSJ, reports OpenAI is considering slashing prices as it competes with Anthropic for users — an early sign the frontier labs may be heading toward a price war.",
+          "url": "https://www.cnbc.com/2026/06/11/openai-mulls-slashing-prices-ahead-of-competition-from-anthropic-wsj.html",
+          "source": "CNBC",
+          "type": "news",
+          "importance": 1,
+          "publishedAt": "2026-06-11"
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "title": "Research",
+      "comment": "The trending arXiv list is still all agents — specifically the memory and search machinery that keeps them robust as their environments shift.",
+      "items": [
+        {
+          "title": "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
+          "summary": "A benchmark for evaluating LLM agents in changing environments, paired with EvoMem, a memory method that tracks environmental updates to keep performance from degrading across dynamic tasks. The top-trending paper on Hugging Face today.",
+          "url": "https://arxiv.org/abs/2606.13681",
+          "source": "arXiv",
+          "type": "paper",
+          "importance": 2,
+          "publishedAt": "2026-06-11"
+        },
+        {
+          "title": "FORT-Searcher: Synthesizing Shortcut-Resistant Search Tasks for Training Deep Search Agents",
+          "summary": "A framework that builds training data for search agents by systematically removing shortcut routes, forcing agents to actually perform the search steps a task requires rather than guessing around them.",
+          "url": "https://arxiv.org/abs/2606.12087",
+          "source": "arXiv",
+          "type": "paper",
+          "importance": 1,
+          "publishedAt": "2026-06-10"
+        }
+      ]
+    },
+    {
+      "id": "engineering",
+      "title": "AI for Engineers",
+      "comment": "Two reality checks on agent hype: an independent security benchmark puts Fable 5's coding at middling, and a hybrid-interface benchmark finds frontier computer-use agents clear barely 40% of real long-horizon work.",
+      "items": [
+        {
+          "title": "Endor Labs: Claude Fable 5 lands mid-tier on a security benchmark",
+          "summary": "Against the launch hype, Endor Labs measured Fable 5 at 59.8% on FuncPass and 19.0% on SecPass on its vulnerability-fixing benchmark, though it did solve four tasks no prior model had cracked.",
+          "url": "https://www.endorlabs.com/learn/claude-fable-5-mythos-grade-hype",
+          "source": "Endor Labs",
+          "type": "blog",
+          "importance": 2,
+          "publishedAt": "2026-06-10"
+        },
+        {
+          "title": "WeaveBench: a long-horizon benchmark for computer-use agents",
+          "summary": "A real-world benchmark of 114 tasks that require coordinating visual desktop control, the command line, and code editing across extended workflows; current frontier models reach only 41.2% success.",
+          "url": "https://arxiv.org/abs/2606.09426",
+          "source": "arXiv",
+          "type": "paper",
+          "importance": 1,
+          "publishedAt": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "id": "safety-psych",
+      "title": "Minds & Machines",
+      "items": []
+    },
+    {
+      "id": "voices",
+      "title": "Voices",
+      "comment": "After two days with Fable 5, the dominant developer impression isn't refusals or coding scores but how hard the model pushes to act on your behalf.",
+      "items": [
+        {
+          "title": "Simon Willison: Claude Fable is relentlessly proactive",
+          "summary": "After two days with Fable 5, Willison describes a model that aggressively reaches for tools and takes initiative to accomplish its goals — a behavioral shift he argues developers need to plan around as much as raw capability.",
+          "url": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/",
+          "source": "Simon Willison",
+          "type": "blog",
+          "importance": 2,
+          "publishedAt": "2026-06-11"
+        }
+      ]
+    }
+  ]
+}
