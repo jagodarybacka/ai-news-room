@@ -1,0 +1,176 @@
+{
+  "date": "2026-06-13",
+  "generatedAt": "2026-06-13T09:30:00+02:00",
+  "headline": {
+    "title": "US government orders Anthropic to suspend access to Fable 5 and Mythos 5",
+    "summary": "Anthropic said the US government issued an export-control directive requiring it to suspend access to its two newest models for all users, citing national-security concerns over a potential jailbreak method. Anthropic is complying with the legal order but disagrees, arguing a narrow potential jailbreak should not justify recalling a widely deployed model and that the capabilities involved are already available from other models.",
+    "url": "https://www.anthropic.com/news/fable-mythos-access",
+    "source": "Anthropic",
+    "publishedAt": "2026-06-12"
+  },
+  "sections": [
+    {
+      "id": "lab-blogs",
+      "title": "The Lab Wire",
+      "items": [
+        {
+          "title": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5",
+          "url": "https://www.anthropic.com/news/fable-mythos-access",
+          "source": "Anthropic",
+          "type": "news",
+          "importance": 3,
+          "publishedAt": "2026-06-12"
+        },
+        {
+          "title": "Results from the first Anthropic Public Record",
+          "url": "https://www.anthropic.com/news/anthropic-public-record",
+          "source": "Anthropic",
+          "type": "news",
+          "importance": 2,
+          "publishedAt": "2026-06-12"
+        },
+        {
+          "title": "TCS and Anthropic partner to bring Claude to regulated industries",
+          "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
+          "source": "Anthropic",
+          "type": "news",
+          "importance": 1,
+          "publishedAt": "2026-06-12"
+        },
+        {
+          "title": "DiffusionGemma: 4x faster text generation",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/",
+          "source": "Google DeepMind",
+          "type": "release",
+          "importance": 1,
+          "publishedAt": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "labs",
+      "title": "Frontier Labs",
+      "comment": "The week of Fable 5 controversy reached its climax: Washington pulled a deployed frontier model off the market over a jailbreak, a move with no clear precedent for a US lab.",
+      "items": [
+        {
+          "title": "US government orders Anthropic to suspend Fable 5 and Mythos 5",
+          "summary": "Anthropic says it received an export-control directive requiring it to cut off access to both new models over a potential jailbreak; the company is complying while publicly disputing the rationale and transparency. The status page confirms the models are offline.",
+          "url": "https://status.claude.com/incidents/s9w82lp9dcn9",
+          "source": "Anthropic Status",
+          "type": "news",
+          "importance": 3,
+          "publishedAt": "2026-06-13"
+        },
+        {
+          "title": "Google DeepMind releases DiffusionGemma for faster local text generation",
+          "summary": "An experimental open model built on the Gemma 4 architecture that pairs a diffusion head with block-autoregressive sampling to denoise blocks of tokens in parallel, claiming roughly 4x faster generation on local GPUs. NVIDIA published acceleration work alongside the release.",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/",
+          "source": "Google DeepMind",
+          "type": "release",
+          "importance": 2,
+          "publishedAt": "2026-06-12"
+        },
+        {
+          "title": "TCS and Anthropic partner on Claude for regulated industries",
+          "summary": "Anthropic and Tata Consultancy Services announced a partnership to deploy Claude across TCS's workforce and build industry-specific solutions for financial services, healthcare, and the public sector — the latest of Anthropic's enterprise distribution deals.",
+          "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
+          "source": "Anthropic",
+          "type": "news",
+          "importance": 1,
+          "publishedAt": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "title": "Research",
+      "comment": "Coordination is the new frontier risk: DeepMind is funding the science of what happens when millions of agents start negotiating with each other.",
+      "items": [
+        {
+          "title": "DeepMind launches a $10M funding call for multi-agent AI safety",
+          "summary": "Google DeepMind, with Schmidt Sciences, the Cooperative AI Foundation, ARIA, and Google.org, opened a $10M call to study risks from large populations of interacting agents, spanning sandboxes, agent-network science, infrastructure, and oversight.",
+          "url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/",
+          "source": "Google DeepMind",
+          "type": "blog",
+          "importance": 2,
+          "publishedAt": "2026-06-11"
+        },
+        {
+          "title": "HYDRA-X: Native Unified Multimodal Models with Holistic Visual Tokenizers",
+          "summary": "A unified model that handles image and video through a single Vision Transformer with holistic visual tokenizers, using frame-level temporal attention and hierarchical compression. The top-trending paper on Hugging Face today.",
+          "url": "https://arxiv.org/abs/2606.13289",
+          "source": "arXiv",
+          "type": "paper",
+          "importance": 1,
+          "publishedAt": "2026-06-11"
+        }
+      ]
+    },
+    {
+      "id": "engineering",
+      "title": "AI for Engineers",
+      "comment": "With frontier models suddenly recallable by decree, the day's most-read engineering writing was about running capable coding agents entirely on your own laptop.",
+      "items": [
+        {
+          "title": "How to set up a local coding agent on macOS",
+          "summary": "A walkthrough running a fully local coding agent with Gemma 4 on llama.cpp, using multi-token-prediction speculative decoding to hit ~72 tokens/sec, an OpenAI-compatible server, and multimodal screenshot support. Front-paged on Hacker News.",
+          "url": "https://ikyle.me/blog/2026/how-to-setup-a-local-coding-agent-on-macos",
+          "source": "ikyle.me",
+          "type": "blog",
+          "importance": 1,
+          "publishedAt": "2026-06-12"
+        },
+        {
+          "title": "Simon Willison adds document context to his OpenAI WebRTC audio tool",
+          "summary": "Willison updated his browser-based realtime audio tool to support the GPT-Realtime-2 model and let users paste a large chunk of document context into a voice session — a small, practical pattern for grounding live audio agents.",
+          "url": "https://simonwillison.net/2026/Jun/12/openai-webrtc/",
+          "source": "Simon Willison",
+          "type": "blog",
+          "importance": 1,
+          "publishedAt": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "safety-psych",
+      "title": "Minds & Machines",
+      "comment": "The public's two biggest AI fears, per Anthropic's first national survey, are job loss and cognitive dependency — and only 15% trust AI companies to make the calls.",
+      "items": [
+        {
+          "title": "Anthropic publishes its first Public Record survey of US attitudes to AI",
+          "summary": "A survey of nearly 52,000 Americans finds people hope AI will cure diseases (48%) and aid people with disabilities (36%) but fear job displacement (64%) and cognitive dependency (56%); 71% back government regulation and just 15% trust AI firms to decide.",
+          "url": "https://www.anthropic.com/news/anthropic-public-record",
+          "source": "Anthropic",
+          "type": "news",
+          "importance": 2,
+          "publishedAt": "2026-06-12"
+        },
+        {
+          "title": "Rethinking Psychometric Evaluation of LLMs: When and Why Self-Reports Predict Behavior",
+          "summary": "Across 11 frontier models, the paper finds task-specific psychometric instruments can reach human-level coherence within a single conversation, but that alignment between self-report and behavior degrades across separate sessions depending on whether traits come from training or immediate context.",
+          "url": "https://arxiv.org/abs/2606.12730",
+          "source": "arXiv",
+          "type": "paper",
+          "importance": 1,
+          "publishedAt": "2026-06-10"
+        }
+      ]
+    },
+    {
+      "id": "voices",
+      "title": "Voices",
+      "comment": "A government recall of a shipping model — not a benchmark or a refusal — became the thing developers couldn't stop discussing, with Anthropic's own status page topping Hacker News.",
+      "items": [
+        {
+          "title": "Simon Willison on the directive to suspend Fable 5 and Mythos 5",
+          "summary": "Willison flags the export-control directive as a notable first, highlighting Anthropic's argument that the demonstrated capabilities were \"widely available from other models\" and questioning the precedent of recalling a deployed model over a narrow jailbreak.",
+          "url": "https://simonwillison.net/2026/Jun/13/us-government-directive-to-suspend-access/",
+          "source": "Simon Willison",
+          "type": "blog",
+          "importance": 1,
+          "publishedAt": "2026-06-13"
+        }
+      ]
+    }
+  ]
+}
