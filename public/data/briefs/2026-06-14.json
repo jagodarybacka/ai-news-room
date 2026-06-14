@@ -1,0 +1,104 @@
+{
+  "date": "2026-06-14",
+  "generatedAt": "2026-06-14T09:30:00+02:00",
+  "headline": {
+    "title": "Amazon's CEO triggered the US crackdown that pulled Anthropic's Fable 5 and Mythos 5 offline",
+    "summary": "Reports say Amazon CEO Andy Jassy told US officials — including Treasury Secretary Scott Bessent — that Amazon researchers had prompted Anthropic's Fable 5 into producing cyberattack-relevant information that was supposed to be off-limits, days before the government ordered both new models suspended. Anthropic counters that the flagged weaknesses are basic and discoverable with other publicly available models, not a true jailbreak.",
+    "url": "https://techcrunch.com/2026/06/13/amazon-ceo-reportedly-raised-anthropic-model-concerns-before-government-crackdown/",
+    "source": "TechCrunch",
+    "publishedAt": "2026-06-13"
+  },
+  "sections": [
+    {
+      "id": "lab-blogs",
+      "title": "The Lab Wire",
+      "items": []
+    },
+    {
+      "id": "labs",
+      "title": "Frontier Labs",
+      "comment": "A quiet Sunday in the West left the spotlight to China: Zhipu shipped GLM-5.2 with a million-token context, while OpenAI bought its way to longer-running Codex agents.",
+      "items": [
+        {
+          "title": "Zhipu releases GLM-5.2 with a 1M-token context, coding-first",
+          "summary": "Z.ai rolled GLM-5.2 out across every GLM Coding Plan tier with a usable 1M-token context window and a new dual thinking-effort system, built on the same 744B-parameter MoE architecture as GLM-5. No benchmarks were published at launch; the standalone API and MIT-licensed open weights are promised for next week.",
+          "url": "https://twitter.com/jietang/status/2065784751345287314",
+          "source": "Jie Tang (Zhipu)",
+          "type": "release",
+          "importance": 2,
+          "publishedAt": "2026-06-13"
+        },
+        {
+          "title": "OpenAI acquires Ona (formerly Gitpod) to run longer-lived Codex agents",
+          "summary": "OpenAI is buying the German cloud startup Ona — previously Gitpod — to bring secure cloud execution and orchestration into Codex, letting agents run hours- or days-long tasks in isolated environments rather than tying up a developer's machine. OpenAI says more than 5 million people now use Codex weekly.",
+          "url": "https://openai.com/index/openai-to-acquire-ona/",
+          "source": "OpenAI",
+          "type": "news",
+          "importance": 1,
+          "publishedAt": "2026-06-11"
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "title": "Research",
+      "items": [
+        {
+          "title": "VIA-SD: Verification via Intra-Model Routing for Speculative Decoding",
+          "summary": "A speculative-decoding framework that adds a lightweight routed submodel to verify moderately-confident draft tokens, cutting calls to the full verifier and reporting 10–20% speedups over prior methods. Currently among the most-upvoted papers on Hugging Face.",
+          "url": "https://arxiv.org/abs/2606.12243",
+          "source": "arXiv",
+          "type": "paper",
+          "importance": 1,
+          "publishedAt": "2026-06-10"
+        }
+      ]
+    },
+    {
+      "id": "engineering",
+      "title": "AI for Engineers",
+      "comment": "With frontier access suddenly revocable by decree, the weekend's most-read engineering writing was again about doing real AI coding cheaply on hardware you control.",
+      "items": [
+        {
+          "title": "AI coding at home without going broke",
+          "summary": "A widely-shared walkthrough weighing three ways to run an AI coding setup — self-hosting open-weight models, renting them via API, or paying for frontier subscriptions — and landing on a hybrid that pairs a frontier plan for hard tasks with cheap open-model APIs for routine work, at roughly $1,000/month. Front-paged on Hacker News.",
+          "url": "https://stephen.bochinski.dev/blog/2026/06/13/ai-coding-at-home-without-going-broke/",
+          "source": "Stephen Bochinski",
+          "type": "blog",
+          "importance": 1,
+          "publishedAt": "2026-06-13"
+        },
+        {
+          "title": "Publishing WASM wheels to PyPI for use with Pyodide",
+          "summary": "Simon Willison walks through the Pyodide 314.0 release, which finally makes it practical to publish WebAssembly wheels to PyPI — letting Python packages with native extensions run in the browser and other WASM sandboxes.",
+          "url": "https://simonwillison.net/2026/Jun/13/publishing-wasm-wheels/",
+          "source": "Simon Willison",
+          "type": "blog",
+          "importance": 1,
+          "publishedAt": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "id": "safety-psych",
+      "title": "Minds & Machines",
+      "items": []
+    },
+    {
+      "id": "voices",
+      "title": "Voices",
+      "comment": "The export-control shock owned the discourse: security researchers called the government's reaction disproportionate and warned the one-company order looks like a de-facto licensing regime for frontier AI.",
+      "items": [
+        {
+          "title": "What researchers are saying about the sudden ban on foreign use of Anthropic's models",
+          "summary": "Security experts pushed back on the export-control order: Luta Security's Katie Moussouris said the response \"seems way out of line\" with the underlying research, since the model was doing exactly what defenders need, while others warned the precedent amounts to a de-facto licensing regime for frontier models.",
+          "url": "https://www.yahoo.com/news/politics/articles/smart-people-saying-sudden-export-030803621.html",
+          "source": "Yahoo News",
+          "type": "news",
+          "importance": 2,
+          "publishedAt": "2026-06-13"
+        }
+      ]
+    }
+  ]
+}
